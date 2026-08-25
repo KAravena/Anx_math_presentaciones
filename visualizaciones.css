@@ -1,0 +1,490 @@
+/* ==========================================================================
+   visualizaciones.css
+   Diseño editorial académico y minimalista para visor de figuras RevealJS
+   ========================================================================== */
+
+/* 1. Tipografía y Estilo Global */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700&display=swap');
+
+:root {
+  --bg-color: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --border-subtle: #e2e8f0;
+  --bg-subtle: #f8fafc;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Reset Global & Background */
+html, body, .reveal-viewport, .reveal {
+  background-color: var(--bg-color) !important;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Ocultar todos los controles decorativos e innecesarios de RevealJS */
+.reveal .controls,
+.reveal .progress,
+.reveal .slide-number,
+.reveal .playback,
+.reveal .speaker-notes,
+.reveal .footer,
+.reveal .header,
+.reveal .slide-menu-button,
+.reveal .slide-tone {
+  display: none !important;
+}
+
+/* 3. Estructura del Canvas de Diapositivas */
+.reveal .slides {
+  text-align: center;
+}
+
+.reveal .slides section {
+  box-sizing: border-box;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 100% !important;
+  top: 0 !important;
+}
+
+/* Eliminar encabezados vacíos o automáticos de figure-slide y title-slide */
+.reveal .slides section h2:empty,
+.reveal .slides section.figure-slide h2,
+.reveal .slides section.title-slide h2 {
+  display: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+}
+
+/* 4. Portada Minimalista Académica */
+.reveal .slides section.title-slide {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100% !important;
+  width: 100% !important;
+  text-align: center;
+  padding: 3rem 2rem !important;
+}
+
+.title-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title-wrapper p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.title-category {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+}
+
+.title-main {
+  display: block;
+  font-size: 2.75rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--text-primary);
+  letter-spacing: -0.025em;
+  margin-bottom: 1.75rem;
+}
+
+.title-sub {
+  display: block;
+  font-size: 1.45rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  letter-spacing: -0.01em;
+}
+
+/* 5. Diapositivas de Figuras (Visor Maximizado & Zero Distraction) */
+.reveal .slides section.figure-slide {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Limpieza total de contenedores intermedios Pandoc / Quarto en figure-slide */
+.reveal .slides section.figure-slide p,
+.reveal .slides section.figure-slide div,
+.reveal .slides section.figure-slide figure,
+.reveal .slides section.figure-slide .quarto-figure,
+.reveal .slides section.figure-slide .quarto-figure-center {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Imagen maximizada ocupando el viewport disponible sin deformación ni recorte */
+.reveal .slides section.figure-slide img,
+.reveal .slides section.figure-slide img.r-stretch {
+  max-width: 98% !important;
+  max-height: 96% !important;
+  width: auto !important;
+  height: 96% !important;
+  object-fit: contain !important;
+  margin: auto !important;
+  display: block !important;
+  border: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  border-radius: 0 !important;
+  outline: none !important;
+}
+
+/* ==========================================================================
+   6. Diapositivas de Contenido Textual (.content-slide)
+   Diseño editorial limpio, jerarquía sobria, cero superposiciones
+   ========================================================================== */
+
+.reveal .slides section.content-slide {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  height: 100% !important;
+  width: 100% !important;
+  max-width: 1340px !important;
+  margin: 0 auto !important;
+  padding: 2.5rem 3.5rem !important;
+  box-sizing: border-box !important;
+}
+
+/* Título de sección discreto y elegante en la parte superior */
+.reveal .slides section.content-slide h2 {
+  display: block !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: var(--text-muted) !important;
+  margin: 0 0 2rem 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  line-height: 1.2 !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  flex-shrink: 0 !important;
+}
+
+/* Párrafos dentro de content-slide */
+.reveal .slides section.content-slide p {
+  margin: 0 0 1rem 0;
+  line-height: inherit;
+}
+
+.reveal .slides section.content-slide p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Componente: Planteamiento del Problema (.problem-grid) --- */
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.5rem;
+  row-gap: 1.4rem;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.problem-item {
+  display: block;
+}
+
+.problem-item p {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.25rem !important;
+  margin: 0 !important;
+}
+
+.problem-number {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  font-feature-settings: "tnum";
+}
+
+.problem-title {
+  font-size: 1.32rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+}
+
+.problem-text {
+  font-size: 1.05rem;
+  line-height: 1.42;
+  color: var(--text-secondary);
+}
+
+.problem-item-wide {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1rem;
+  margin-top: 0.25rem;
+}
+
+.problem-closure {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.85rem !important;
+  font-size: 1.02rem !important;
+  color: var(--text-muted) !important;
+  margin-top: 1.75rem !important;
+  padding: 0.5rem 0 !important;
+  letter-spacing: 0.01em !important;
+}
+
+.problem-closure p {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.85rem !important;
+  margin: 0 !important;
+}
+
+.closure-part {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.closure-arrow {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+}
+
+/* --- Componente: Brecha de Conocimiento (.gap-container) --- */
+.gap-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.gap-known-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.5rem;
+  width: 100%;
+}
+
+.gap-card {
+  display: block;
+  background: transparent;
+}
+
+.gap-card p {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.4rem !important;
+  margin: 0 !important;
+}
+
+.gap-tag {
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.gap-text {
+  font-size: 1.15rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.gap-text strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.gap-focal-card {
+  display: block;
+  background: var(--bg-subtle);
+  border-left: 4px solid var(--text-primary);
+  padding: 1.5rem 2rem;
+  border-radius: 0 8px 8px 0;
+  margin-top: 0.5rem;
+}
+
+.gap-focal-card p {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.5rem !important;
+  margin: 0 !important;
+}
+
+.gap-focal-tag {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.gap-focal-statement {
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+}
+
+.gap-focal-statement strong {
+  font-weight: 700;
+  color: #020617;
+}
+
+.gap-focal-sub {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+/* --- Componente: Statement Card (Pregunta de Investigación / Objetivo General) --- */
+.statement-card {
+  max-width: 1200px;
+  font-size: clamp(2.05rem, 2.35vw, 2.45rem);
+  line-height: 1.32;
+  font-weight: 450;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.statement-card strong {
+  font-weight: 600;
+  color: #020617;
+}
+
+/* --- Componente: Grilla de Objetivos Específicos --- */
+.objectives-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  column-gap: 4.5rem;
+  row-gap: 1.85rem;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.objective-item {
+  display: block;
+}
+
+.objective-item p {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 1.25rem !important;
+  margin: 0 !important;
+}
+
+.objective-num {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  padding-top: 0.1rem;
+  font-feature-settings: "tnum";
+  min-width: 28px;
+  flex-shrink: 0;
+}
+
+.objective-text {
+  display: block;
+  font-size: 1.18rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.objective-text strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* --- Componente: Hipótesis (Principales y Secundarias) --- */
+.hypothesis-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.hypothesis-item {
+  display: block;
+}
+
+.hypothesis-item p {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 1.75rem !important;
+  margin: 0 !important;
+}
+
+.hypothesis-id {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  min-width: 52px;
+  flex-shrink: 0;
+  line-height: 1.3;
+}
+
+.hypothesis-content {
+  display: block;
+  font-size: 1.35rem;
+  line-height: 1.42;
+  color: var(--text-secondary);
+}
+
+.hypothesis-content strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.hypothesis-tag {
+  display: block;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: 0.4rem;
+}
