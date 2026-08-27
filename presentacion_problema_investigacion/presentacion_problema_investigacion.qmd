@@ -1,0 +1,307 @@
+---
+format:
+  revealjs:
+    theme: default
+    css: visualizaciones.css
+    width: 1600
+    height: 900
+    margin: 0.02
+    min-scale: 0.2
+    max-scale: 2.0
+    controls: false
+    controls-tutorial: false
+    center: true
+    touch: true
+    keyboard: true
+    overview: false
+    menu: false
+    navigation-mode: linear
+    slide-number: c/t
+    transition: fade
+    background-transition: fade
+---
+
+## {.title-slide}
+
+::: {.title-wrapper}
+[Seminario de Investigación II]{.title-category}
+
+[Heterogeneidad de la asociación entre ansiedad matemática y rendimiento matemático según la composición socioeconómica escolar en América Latina y el Caribe]{.title-main}
+
+[PISA 2022 · Magíster en Psicología Educacional · Universidad de Chile]{.title-sub}
+
+[Katherine Aravena Herrera]{.title-author}
+:::
+
+## Punto de partida {.content-slide}
+
+::: {.two-column}
+::: {.left-focus}
+[Aprendizaje matemático y desigualdad]{.section-main}
+:::
+
+::: {.right-text}
+El rendimiento matemático permite observar desigualdades educativas entre estudiantes, escuelas y sistemas.
+
+<span class="inline-cite">(OECD, 2023a)</span>
+
+En América Latina y el Caribe, PISA 2022 muestra bajos niveles de aprendizaje y brechas asociadas al origen socioeconómico.
+
+<span class="inline-cite">(Banco Interamericano de Desarrollo et al., 2024)</span>
+:::
+:::
+
+## Estratificación social {.content-slide}
+
+::: {.two-column}
+::: {.left-focus}
+[Rendimiento matemático]{.section-main}
+:::
+
+::: {.right-text}
+El desempeño presenta un gradiente asociado al nivel socioeconómico individual y al perfil social de las escuelas -> No se distribuye de manera homogénea, estratificación de los resultados.
+
+<span class="inline-cite">(OECD, 2023a; Willms, 2010)</span>
+:::
+:::
+
+## Dimensión afectiva {.content-slide}
+
+::: {.two-column}
+::: {.left-focus}
+[Ansiedad matemática]{.section-main}
+:::
+
+::: {.right-text}
+La ansiedad matemática refiere a tensión, preocupación o aprensión ante situaciones que involucran el uso o evaluación de competencias matemáticas.
+
+<span class="inline-cite">(Ashcraft, 2002)</span>
+
+Desde la Control-Value Theory, puede comprenderse como una emoción de logro vinculada a valoraciones de control y valor.
+
+<span class="inline-cite">(Pekrun, 2006, 2024)</span>
+:::
+:::
+
+## Ansiedad y desigualdad {.content-slide}
+
+::: {.two-column}
+::: {.left-focus}
+[La ansiedad también está situada]{.section-main}
+:::
+
+::: {.right-text}
+PISA 2022 reporta diferencias de ansiedad matemática entre estudiantes socioeconómicamente aventajados y desfavorecidos.
+
+<span class="inline-cite">(OECD, 2024)</span>
+
+Esto permite tratar la ansiedad matemática como una experiencia afectiva que se desarrolla en contextos sociales y escolares diferenciados.
+:::
+:::
+
+## Un patrón consolidado {.content-slide}
+
+::: {.center-statement}
+Mayor ansiedad matemática se asocia con menor rendimiento matemático.
+
+<span class="inline-cite">(Barroso et al., 2021; Caviola et al., 2022)</span>
+
+<span class="metric">r ≈ −.28</span>
+<span class="metric-caption">correlación promedio reportada por Barroso et al. (2021)</span>
+:::
+## Del estudiante al contexto escolar {.content-slide}
+
+::: {.ses-grid}
+
+::: {.ses-col}
+
+<span class="ses-title">Estudiante</span>
+
+**Nivel socioeconómico individual**
+
+Describe la posición socioeconómica del estudiante y su hogar.
+
+<span class="inline-cite">(Avvisati & Wuyts, 2024)</span>
+
+:::
+
+::: {.ses-col}
+
+<span class="ses-title">Escuela</span>
+
+**Composición socioeconómica escolar**
+
+Describe el perfil socioeconómico promedio de quienes asisten al establecimiento.
+
+<span class="inline-cite">(Willms, 2010; Perry & McConney, 2010)</span>
+
+:::
+
+:::
+
+::: {.bottom-note}
+
+Dos estudiantes con una situación socioeconómica similar pueden estudiar en escuelas con contextos sociales muy diferentes.
+
+Por eso interesa mirar **qué ocurre con la ansiedad y el rendimiento dentro de esos distintos contextos escolares**.
+
+:::
+
+## Heterogeneidad entre sistemas {.content-slide}
+
+::: {.two-column}
+::: {.left-focus}
+[Escuelas y sistemas]{.section-main}
+:::
+
+::: {.right-text}
+La asociación ansiedad–rendimiento presenta variación entre contextos y sistemas educativos.
+
+<span class="inline-cite">(Lau et al., 2022; OECD, 2024)</span>
+
+Por eso la tesis busca caracteriza cuánto varía el patrón entre sistemas de América Latina y el Caribe.
+:::
+:::
+
+## Brecha de conocimiento {.content-slide}
+
+::: {.gap-stack}
+::: {.gap-line}
+<span class="gap-tag">Sabemos que</span>
+La ansiedad matemática se asocia negativamente con el rendimiento y presenta heterogeneidad contextual.
+
+<span class="inline-cite">(Barroso et al., 2021; Lau et al., 2022)</span>
+:::
+
+::: {.gap-line}
+<span class="gap-tag">Sabemos también que</span>
+La composición socioeconómica escolar se relaciona con diferencias en resultados educativos.
+
+<span class="inline-cite">(Willms, 2010; Sciffer et al., 2022)</span>
+:::
+
+::: {.gap-focal}
+<span class="gap-tag">Sabemos menos sobre</span>
+cómo la composición socioeconómica escolar se relaciona específicamente con la **magnitud** de la asociación ansiedad–rendimiento, especialmente entre sistemas educativos de América Latina y el Caribe.
+:::
+:::
+
+## Pregunta de investigación {.content-slide}
+
+::: {.statement-card}
+¿En qué medida la asociación entre **ansiedad matemática** y **rendimiento matemático** varía entre escuelas y sistemas educativos de América Latina y el Caribe, y cómo difiere según la **composición socioeconómica escolar** en PISA 2022?
+:::
+
+## Objetivo general {.content-slide}
+
+::: {.statement-card}
+Analizar la variación de la asociación entre **ansiedad matemática** y **rendimiento matemático** entre escuelas y sistemas educativos de América Latina y el Caribe, examinando si su magnitud difiere según la **composición socioeconómica escolar** en PISA 2022.
+:::
+## Objetivos específicos {.content-slide}
+
+::: {.objective-list}
+
+::: {.objective-item}
+[01]{.objective-num}
+
+[Estimar y comparar la **dirección y magnitud** de la asociación entre ansiedad matemática y rendimiento matemático entre los sistemas educativos de la región.]{.objective-text}
+:::
+
+::: {.objective-item}
+[02]{.objective-num}
+
+[Examinar la **variación entre escuelas** de la magnitud de esta asociación.]{.objective-text}
+:::
+
+::: {.objective-item}
+[03]{.objective-num}
+
+[Examinar si la asociación ansiedad–rendimiento **difiere según la composición socioeconómica escolar**, distinguiendo el nivel socioeconómico individual del perfil socioeconómico de la escuela y país.]{.objective-text}
+:::
+
+:::
+
+## Hipótesis principales {.content-slide}
+
+::: {.hypothesis-list}
+
+::: {.hypothesis-item}
+[H1]{.hypothesis-id}
+
+[Mayor **ansiedad matemática** se asociará con **menor rendimiento matemático**.]{.hypothesis-text}
+:::
+
+::: {.hypothesis-item}
+[H2]{.hypothesis-id}
+
+[La magnitud de la asociación ansiedad–rendimiento presentará **heterogeneidad entre escuelas y sistemas educativos**.]{.hypothesis-text}
+:::
+
+::: {.hypothesis-item}
+[H3]{.hypothesis-id}
+
+[La magnitud de la asociación ansiedad–rendimiento **diferirá según la composición socioeconómica escolar**.]{.hypothesis-text}
+
+[Hipótesis no direccional]{.hypothesis-tag}
+:::
+
+:::
+
+## Referencias I {.content-slide}
+
+:::: {.references-grid}
+
+::: {.refs-col}
+
+Ashcraft, M. H. (2002). Math anxiety: Personal, educational, and cognitive consequences. *Current Directions in Psychological Science, 11*(5), 181–185. https://doi.org/10.1111/1467-8721.00196
+
+Avvisati, F., & Wuyts, C. (2024). *The measurement of socio-economic status in PISA* (OECD Education Working Papers No. 321). OECD Publishing. https://doi.org/10.1787/0c5b793c-en
+
+Banco Interamericano de Desarrollo, Banco Mundial, Arias Ortiz, E., Bos, M. S., Chen Peraza, J., Giambruno, C., Levin, V., Oubiña, V., Pineda, J. A., & Zoido, P. (2024). *El aprendizaje no puede esperar: Lecciones para América Latina y el Caribe a partir de PISA 2022*. https://doi.org/10.18235/0005671
+
+Barroso, C., Ganley, C. M., McGraw, A. L., Geer, E. A., Hart, S. A., & Daucourt, M. C. (2021). A meta-analysis of the relation between math anxiety and math achievement. *Psychological Bulletin, 147*(2), 134–168. https://doi.org/10.1037/bul0000307
+
+:::
+
+::: {.refs-col}
+
+Caviola, S., Toffalini, E., Giofrè, D., Mercader Ruiz, J., Szűcs, D., & Mammarella, I. C. (2022). Math performance and academic anxiety forms, from sociodemographic to cognitive aspects: A meta-analysis on 906,311 participants. *Educational Psychology Review, 34*(1), 363–399. https://doi.org/10.1007/s10648-021-09618-5
+
+Lau, N. T. T., Hawes, Z., Tremblay, P., & Ansari, D. (2022). Disentangling the individual and contextual effects of math anxiety: A global perspective. *Proceedings of the National Academy of Sciences of the United States of America, 119*(7), e2115855119. https://doi.org/10.1073/pnas.2115855119
+
+OECD. (2023). *PISA 2022 results (Volume I): The state of learning and equity in education*. https://doi.org/10.1787/53f23881-en
+
+OECD. (2024). *PISA 2022 results (Volume V): Learning strategies and attitudes for life*. https://doi.org/10.1787/c2e44201-en
+
+:::
+
+::::
+
+
+## Referencias II {.content-slide}
+
+:::: {.references-grid}
+
+::: {.refs-col}
+
+O’Hara, G., Kennedy, H., Naoufal, M., & Montreuil, T. (2022). The role of the classroom learning environment in students’ mathematics anxiety: A scoping review. *British Journal of Educational Psychology, 92*(4), 1458–1486. https://doi.org/10.1111/bjep.12510
+
+Pekrun, R. (2006). The control-value theory of achievement emotions: Assumptions, corollaries, and implications for educational research and practice. *Educational Psychology Review, 18*(4), 315–341. https://doi.org/10.1007/s10648-006-9029-9
+
+Pekrun, R. (2024). Control-value theory: From achievement emotion to a general theory of human emotions. *Educational Psychology Review, 36*, Article 83. https://doi.org/10.1007/s10648-024-09909-7
+
+Perry, L. B., & McConney, A. (2010). School socio-economic composition and student outcomes in Australia: Implications for educational policy. *Australian Journal of Education, 54*(1), 72–85. https://doi.org/10.1177/000494411005400106
+
+:::
+
+::: {.refs-col}
+
+Sciffer, M. G., Perry, L. B., & McConney, A. (2022). The substantiveness of socioeconomic school compositional effects in Australia: Measurement error and the relationship with academic composition. *Large-scale Assessments in Education, 10*, Article 21. https://doi.org/10.1186/s40536-022-00142-8
+
+van Ewijk, R., & Sleegers, P. (2010). The effect of peer socioeconomic status on student achievement: A meta-analysis. *Educational Research Review, 5*(2), 134–150. https://doi.org/10.1016/j.edurev.2010.02.001
+
+Willms, J. D. (2010). School composition and contextual effects on student outcomes. *Teachers College Record, 112*(4), 1008–1037. https://doi.org/10.1177/016146811011200408
+
+:::
+
+::::
