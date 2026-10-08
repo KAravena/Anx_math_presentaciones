@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1360 510" width="1360" height="510" role="img" aria-label="Tres gráficos conceptuales: H1 asociación negativa intraescuela, H2 diferentes pendientes por escuela y H3 posibles direcciones alternativas de moderación por composición escolar">
+<style>
+.t{font:700 30px Arial,sans-serif;fill:#17324D}.st{font:22px Arial,sans-serif;fill:#454C55}.ax{font:19px Arial,sans-serif;fill:#454C55}.lbl{font:700 22px Arial,sans-serif;fill:#17324D}.sub{font:19px Arial,sans-serif;fill:#62717C}.foot{font:21px Arial,sans-serif;fill:#17324D}
+.axis{stroke:#879AA5;stroke-width:2.6;fill:none}.navy{stroke:#17324D;stroke-width:6;fill:none;stroke-linecap:round}.green{stroke:#287F70;stroke-width:5.6;fill:none;stroke-linecap:round}.alt{stroke:#778B9A;stroke-width:5.5;fill:none;stroke-dasharray:12 9;stroke-linecap:round}
+</style>
+<line x1="450" y1="19" x2="450" y2="476" stroke="#DEE6EC" stroke-width="2"/>
+<line x1="906" y1="19" x2="906" y2="476" stroke="#DEE6EC" stroke-width="2"/>
+<!-- H1 panel: observed conceptual negative association -->
+<text class="t" x="25" y="47">H1 · Asociación</text>
+<text class="st" x="25" y="82">¿Se asocian ansiedad y rendimiento?</text>
+<path class="axis" d="M92 151 V358 H408"/>
+<path class="navy" d="M118 180 L381 331"/>
+<text class="ax" x="91" y="136">Rendimiento</text>
+<text class="ax" x="244" y="390">Ansiedad matemática</text>
+<text class="sub" x="25" y="448">Pendiente negativa promedio</text>
+<text class="foot" x="25" y="476">dentro de las escuelas</text>
+<!-- H2: distinct school-specific gradients -->
+<text class="t" x="478" y="47">H2 · Heterogeneidad</text>
+<text class="st" x="478" y="82">¿Cambia la magnitud entre escuelas?</text>
+<path class="axis" d="M540 151 V358 H862"/>
+<path class="navy" d="M565 194 L835 320"/>
+<path class="green" d="M565 175 L835 347"/>
+<text class="ax" x="540" y="136">Rendimiento</text>
+<text class="ax" x="700" y="390">Ansiedad</text>
+<text class="sub" x="478" y="448">Dos escuelas, dos pendientes</text>
+<text class="foot" x="478" y="476">de distinta intensidad</text>
+<!-- H3: possible direction of conditional slope/composition association remains open -->
+<text class="t" x="935" y="47">H3 · Moderación</text>
+<text class="st" x="935" y="82">¿Se relaciona con la composición?</text>
+<path class="axis" d="M1000 151 V358 H1334"/>
+<path class="navy" d="M1028 316 L1302 192"/>
+<path class="green" d="M1028 194 L1302 316" stroke-dasharray="12 8"/>
+<text class="ax" x="1000" y="136">Pendiente</text>
+<text class="ax" x="1028" y="388">Composición escolar</text>
+<text class="sub" x="935" y="448">Direcciones hipotéticas distintas:</text>
+<text class="foot" x="935" y="476">H3 no predice cuál</text>
+</svg>

@@ -1,0 +1,185 @@
+/* Academic Navy · Quarto RevealJS and offline presentation */
+:root {--navy:#17324D;--ink:#454C55;--muted:#62717C;--pale:#E8EDF2;--green:#287F70;--white:#FFFFFF}
+*{box-sizing:border-box} html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;background:#e5eaf0;color:var(--navy)}
+.slide{width:1600px;height:900px;background:#fff;position:relative;overflow:hidden;margin:auto;break-after:page;page-break-after:always;}
+.slide-inner{position:relative;width:100%;height:100%;padding:62px 105px 79px;background:#fff;display:flex;flex-direction:column;gap:23px;}
+.kicker{font:700 18px Arial,sans-serif;letter-spacing:.15em;color:var(--green);text-transform:uppercase;}
+.slide-title{font:700 43px/1.17 Georgia,'Times New Roman',serif;color:var(--navy);margin:0;letter-spacing:-.015em;max-width:1380px;}
+.toprule{height:3px;background:var(--navy);width:66px;margin-top:1px;}
+.slide-content{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:22px;}
+.lead{font:400 34px/1.33 Arial,sans-serif;color:var(--navy);margin:0;}
+.lead strong,.body-copy strong{font-weight:700;color:var(--navy)}
+.body-copy{font:400 27px/1.39 Arial,sans-serif;color:var(--ink);margin:0;}
+.minor{font:400 23px/1.38 Arial,sans-serif;color:var(--muted);margin:0;}
+.big-question{font:400 41px/1.27 Georgia,serif;color:var(--navy);max-width:1260px;margin:0;}
+.quote-question{font:400 34px/1.43 Georgia,serif;color:var(--navy);max-width:1330px;margin:0;}
+.footer{position:absolute;bottom:35px;left:105px;right:105px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #d5dee5;padding-top:14px;color:var(--muted);font:17px Arial,sans-serif;}
+.ref{color:#657581;font:18px Arial,sans-serif;}
+.hero{font:700 49px/1.14 Georgia,serif;max-width:1030px;margin:0;color:var(--navy);}
+.hero-sub{font:27px/1.35 Arial,sans-serif;color:var(--ink);margin:0;}
+.meta{font:21px/1.55 Arial,sans-serif;color:var(--ink);margin:0;}
+.thin-rule{height:2px;background:var(--pale);width:100%;}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center;min-height:0;}
+.two.wideleft{grid-template-columns:1.3fr .85fr;gap:63px}.two.wideright{grid-template-columns:.8fr 1.2fr}
+.comparison-title{font:700 29px Arial,sans-serif;color:var(--navy);margin-bottom:24px;}
+.number{font:700 78px/1 Arial,sans-serif;color:var(--navy)}
+.highlight-number{font:700 69px/1.05 Georgia,serif;color:var(--navy)}
+.metric-caption{font:23px/1.35 Arial,sans-serif;color:var(--ink)}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;text-align:center;align-items:center;}
+.metric{border-left:2px solid var(--pale);padding:30px 18px;}.metric:first-child{border-left:0;}
+.figure{display:block;width:100%;max-height:525px;object-fit:contain;}
+.figure.sm{max-height:375px}.figure.mid{max-height:450px}
+.figure-zone{display:flex;align-items:center;justify-content:center;min-height:0;flex:1;}
+.figure-zone img{max-height:100%;max-width:100%;width:100%;object-fit:contain}
+.figure-left{width:100%;min-height:0}
+.diagram-caption{font:19px Arial,sans-serif;color:var(--muted);}
+.rowline{display:grid;grid-template-columns:220px 1fr;gap:25px;align-items:center;padding:18px 0;border-bottom:2px solid var(--pale)}
+.rowline .label{font:700 28px Arial,sans-serif;color:var(--navy)}
+.rowline .desc{font:27px/1.25 Arial,sans-serif;color:var(--ink)}
+.triple{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;align-items:stretch;}
+.triple .unit{padding:20px 24px 25px;border-left:3px solid #B2C4CF;min-width:0;}
+.triple .unit:first-child{border-left:3px solid var(--green)}
+.triple .unit h3{font:700 27px Arial,sans-serif;margin:0 0 18px}.triple .unit p{font:24px/1.35 Arial,sans-serif;color:var(--ink);margin:0}
+.three-stripes{display:flex;flex-direction:column;gap:20px;}
+.stripe{padding:22px 30px;background:#f3f6f8;border-left:5px solid var(--navy);font:26px/1.25 Arial,sans-serif;color:var(--navy);}
+.stripe.green{border-color:var(--green)}
+.hyp-list{display:flex;flex-direction:column;gap:25px;}
+.hyp{display:grid;grid-template-columns:98px 1fr;gap:26px;align-items:start;border-bottom:2px solid var(--pale);padding-bottom:20px;}
+.hyp:last-child{border:0}
+.hyp-tag{font:700 39px Georgia,serif;color:var(--green)}
+.hyp-text{font:26px/1.4 Arial,sans-serif;color:var(--navy);}
+.method-list{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+.method-col h3{font:700 28px Georgia,serif;border-bottom:3px solid var(--navy);padding-bottom:15px;margin:0 0 18px}
+.method-col p{font:26px/1.4 Arial,sans-serif;color:var(--ink)}
+.small-label{font:700 20px Arial,sans-serif;color:var(--green);letter-spacing:.04em;text-transform:uppercase}
+.note-band{padding:20px 25px;background:#edf4f3;color:#246e64;font:24px/1.35 Arial,sans-serif;border-left:5px solid var(--green)}
+.math{font:31px/1.45 Georgia,'Times New Roman',serif;color:var(--navy)}
+.grid-pair{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+.grid-pair .cell{padding:25px 28px;border-top:4px solid var(--navy)}
+.grid-pair .cell h3{font:700 29px Georgia,serif;margin:0 0 20px}
+.grid-pair .cell p{font:27px/1.4 Arial,sans-serif;color:var(--ink)}
+.main-figure-side{display:grid;grid-template-columns:56% 40%;gap:4%;align-items:center;flex:1;min-height:0;}
+.stacked-callouts{display:flex;flex-direction:column;gap:18px}.stacked-callouts .callout{border-bottom:2px solid var(--pale);padding-bottom:13px;font:25px/1.38 Arial,sans-serif;color:var(--ink)}
+.stacked-callouts strong{font-size:29px;color:var(--navy)}
+.backup .slide-title{font-size:41px}.backup .slide-inner{padding-top:58px}.backup .body-copy{font-size:25px}
+.backup-label{background:var(--green);color:#fff;font:700 16px Arial,sans-serif;padding:9px 16px;border-radius:3px;display:inline-block;max-width:max-content;letter-spacing:.1em}
+.notes{display:none}
+#notes-panel{display:none;position:fixed;z-index:500;bottom:25px;right:25px;width:min(550px,40vw);max-height:52vh;overflow-y:auto;padding:22px;background:#17324d;color:white;border-radius:5px;box-shadow:0 8px 24px #0003;font:18px/1.42 Arial,sans-serif;white-space:pre-wrap}
+#notes-panel.on{display:block}
+#nav-hint{position:fixed;z-index:99;bottom:12px;right:18px;font:15px Arial,sans-serif;color:#8b959d;display:none}
+@media screen {
+ html,body{height:100%;overflow:hidden} .slide{display:none;position:absolute;left:50%;top:50%;margin:0;transform:translate(-50%,-50%) scale(var(--scale,1));transform-origin:center center;} .slide.active{display:block;} #nav-hint{display:block}
+}
+@media print{ @page { size: 1600px 900px; margin:0 } html,body{height:auto;overflow:visible;background:white} .slide,.slide.active{position:relative!important;display:block!important;transform:none!important;left:0!important;top:0!important;margin:0!important;break-after:page;page-break-after:always;box-shadow:none} #notes-panel,#nav-hint{display:none!important}}
+/* Quarto RevealJS compatibility */
+.reveal{font-family:Arial,sans-serif;color:var(--navy)}.reveal .slides{font-size:28px;text-align:left}.reveal .slides section{background:#fff}.reveal .slides .slide-inner{height:800px;max-width:1600px;width:100%;padding:20px 15px 50px;}
+.reveal .slides .footer{bottom:5px;left:15px;right:15px}.reveal .slides .slide-title{font-size:43px}
+
+
+/* Pauta-based narrative redesign (October 2026) */
+.slide-inner{gap:18px}
+.kicker{color:#287F70;font-size:18px}
+.nav-section{letter-spacing:.16em}
+.lead{font-size:33px}
+.thesis-path{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;width:100%}
+.thesis-path>div{padding:23px 12px 23px 22px;border-left:4px solid #17324D;min-width:0;display:flex;flex-direction:column;gap:18px}
+.thesis-path strong{font:700 28px Georgia,serif;color:#17324D}
+.thesis-path span{font:26px/1.34 Arial,sans-serif;color:#454C55}
+.agenda{display:flex;flex-direction:column;gap:14px;max-width:1250px}
+.agenda>div{display:grid;grid-template-columns:75px 1fr;gap:22px;align-items:center;border-bottom:1px solid #e0e6ec;padding:9px 0;font:30px/1.25 Arial,sans-serif;color:#17324D}
+.agenda-n{font:700 27px Georgia,serif;color:#287F70}
+.diagram-small img{width:100%;max-height:390px}
+.evidence-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:35px}
+.evidence-grid>div{display:flex;flex-direction:column;gap:20px;padding:23px 20px;border-top:5px solid #17324D}
+.evidence-grid b{font:700 26px/1.23 Georgia,serif;color:#17324D}
+.evidence-grid span{font:24px/1.38 Arial,sans-serif;color:#454C55}
+.objective-general{display:grid;grid-template-columns:230px 1fr;gap:23px;margin-bottom:12px;padding:10px 0 20px;border-bottom:3px solid #17324D}
+.objective-general strong{font:700 25px Georgia,serif;color:#17324D}
+.objective-general span{font:23px/1.34 Arial,sans-serif;color:#454C55}
+.objective-step{display:grid;grid-template-columns:94px 1fr;gap:15px;padding:13px 0;border-bottom:1px solid #d6e0e7}
+.objective-step b{font:700 28px Georgia,serif;color:#287F70}
+.objective-step span{font:23px/1.34 Arial,sans-serif;color:#17324D}
+.parameter-map{display:flex;flex-direction:column;gap:20px}
+.parameter-map>div{display:grid;grid-template-columns:290px 1fr;gap:30px;align-items:center;padding:17px 0;border-bottom:2px solid #E8EDF2}
+.parameter-map .param{font:700 35px Georgia,serif;color:#287F70}
+.parameter-map b{font:400 28px/1.25 Arial,sans-serif;color:#17324D}
+.ethics .body-copy{font-size:25px;margin:0 0 13px}
+.ethics .figure{max-height:335px}
+.ethics .minor{font-size:18px}
+.math-spec{display:grid;grid-template-columns:1fr 1.3fr;gap:50px}
+.math-spec b{font:700 27px Georgia,serif;color:#17324D}
+.math-spec p{font:25px/1.65 Georgia,serif;color:#454C55}
+.slide-title{font-size:42px}
+.quote-question{font-size:34px;line-height:1.45}
+.hyp{gap:18px;padding-bottom:16px}
+.hyp-list{gap:20px}
+.hyp-text{font-size:26px;line-height:1.34}
+.slide-content{gap:19px}
+.footer{font-size:17px}
+.foot-brief{font-size:15px}
+/* Quarto output uses the same full-height components, scaled natively to reveal canvas. */
+.reveal .slides .slide-inner{box-sizing:border-box;width:1600px;height:900px;max-width:none;padding:62px 105px 79px;gap:18px}
+.reveal .slides .slide-content{flex:1}
+.reveal .slides .footer{bottom:35px;left:105px;right:105px}
+.reveal .slides section{height:900px;text-align:left}
+.reveal .slides .slide-title{font-size:42px}
+/* Hide Pandoc h2 to avoid duplicated visual slide titles. */
+.reveal .slides section > h2:first-child{display:none!important}
+/* Hidden speaker notes remain available in presenter mode; remove development hint completely. */
+#nav-hint{display:none!important}
+@media print {.slide{background:white} }
+
+/* Strengthened educational-psychology narrative (Oct 2026) */
+.psych-frame{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:35px;align-items:stretch}
+.psych-frame>div{border-top:5px solid var(--navy);padding:22px 14px 16px 18px;min-width:0}
+.psych-frame h3{font:700 27px/1.24 Georgia,serif;margin:0 0 18px;color:var(--navy)}
+.psych-frame p{font:25px/1.35 Arial,sans-serif;color:var(--ink);margin:0}
+.psych-frame>div:nth-child(2){border-color:var(--green)}
+.insight{font:400 29px/1.34 Arial,sans-serif;color:var(--navy);border-left:5px solid var(--green);padding:7px 22px;max-width:1330px}
+.theory-caption{font:21px/1.3 Arial,sans-serif;color:var(--muted);margin:0}
+.argument-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:38px}
+.argument-steps>div{border-top:4px solid var(--navy);padding:19px 8px 10px 14px}
+.argument-steps h3{font:700 27px/1.2 Georgia,serif;margin:0 0 16px;color:var(--navy)}
+.argument-steps p{font:24px/1.32 Arial,sans-serif;color:var(--ink);margin:0}
+.argument-steps>div:last-child{border-color:var(--green)}
+.evidence-pillar{display:grid;grid-template-columns:repeat(3,1fr);gap:33px}
+.evidence-pillar>div{padding:18px 17px 18px;border-top:4px solid var(--navy)}
+.evidence-pillar h3{font:700 25px/1.25 Georgia,serif;margin:0 0 14px;color:var(--navy)}
+.evidence-pillar p{font:24px/1.34 Arial,sans-serif;color:var(--ink);margin:0}
+.evidence-pillar .evidtype{display:block;color:var(--green);font:700 17px/1.1 Arial,sans-serif;letter-spacing:.05em;margin-bottom:12px;text-transform:uppercase}
+.evidence-pillar>div:last-child{border-top-color:var(--green)}
+.diagram-extended{width:100%;max-height:475px;object-fit:contain}
+.bridge-points{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.bridge-points>div{font:23px/1.32 Arial,sans-serif;color:var(--ink);padding:12px;border-left:3px solid var(--pale)}
+.bridge-points b{color:var(--navy);display:block;margin-bottom:6px}
+@media print {.slide{overflow:hidden!important}}
+
+/* H1–H3: larger concept figures after the literal hypotheses (not in introduction) */
+.hyp-visual-slide .slide-content{justify-content:center;gap:11px}
+.hyp-visual-body .figure-zone{flex:0 1 auto;min-height:0;max-height:530px}
+.hyp-triad{display:block;width:100%;height:auto;max-height:510px;object-fit:contain}
+.hyp-visual-body .hyp-note{font-size:24px;line-height:1.22;padding:15px 24px}
+.hyp-visual-body .hyp-caption{font-size:19px;line-height:1.25;color:#62717C;margin:0}
+
+/* Ética: tres responsabilidades claras, sin tarjetas decorativas. */
+.ethics-only-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:49px;align-items:start;width:100%;padding:14px 2px 0}
+.ethics-only-grid .ethics-item{min-width:0;border-top:5px solid var(--navy);padding:27px 8px 10px 8px}
+.ethics-only-grid .ethics-item:nth-child(2){border-top-color:var(--green)}
+.ethics-only-grid h3{font:700 31px/1.22 Georgia,'Times New Roman',serif;letter-spacing:-.01em;color:var(--navy);margin:0 0 27px}
+.ethics-only-grid p{font:400 28px/1.43 Arial,Helvetica,sans-serif;color:var(--ink);margin:0}
+
+/* Anexo A: ecuación M5 combinada + descomposición por niveles. */
+.m5-layout{display:flex;flex-direction:column;gap:27px;width:100%;min-width:0}
+.m5-combined{background:#f5f8fa;border-left:5px solid var(--green);padding:20px 28px 23px;min-width:0}
+.m5-section-label{font:700 22px/1.2 Arial,Helvetica,sans-serif;letter-spacing:.035em;color:var(--navy);margin:0 0 14px}
+.m5-formula{font:400 34px/1.55 Georgia,'Times New Roman',serif;color:var(--navy);white-space:nowrap;font-variant-numeric:lining-nums;letter-spacing:-.011em}
+.m5-formula>div{margin:0;min-width:0}
+.m5-formula sub,.m5-level-math sub,.m5-takeaway sub{font-size:.66em;line-height:0;vertical-align:sub}
+.m5-interaction{color:#226d61;font-weight:700}
+.m5-levels{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:start;padding:0 4px}
+.m5-level{padding-top:16px;border-top:2px solid #dbe4e9;min-width:0}
+.m5-level:nth-child(2){border-top-color:#82b8aa}
+.m5-level-math{font:400 26px/1.72 Georgia,'Times New Roman',serif;color:#344956;white-space:nowrap;letter-spacing:-.012em}
+.m5-takeaway{font:400 22px/1.3 Arial,sans-serif;color:var(--ink);border-top:1px solid #dae3e9;padding:16px 4px 0}
+.m5-takeaway b{color:var(--navy)}
+.m5-dot{padding:0 15px;color:#8aa2b2}

@@ -1,0 +1,555 @@
+---
+title: false
+title-slide: false
+lang: es
+format:
+  revealjs:
+    theme: simple
+    css: styles.css
+    width: 1600
+    height: 900
+    margin: 0.00
+    center: false
+    slide-number: false
+    transition: none
+    navigation-mode: linear
+    incremental: false
+    embed-resources: true
+    controls: true
+    scrollable: false
+---
+
+## Diapositiva 01 {#diapositiva-01}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">TÍTULO Y RESUMEN</div>
+<h2 class="slide-title">Proyecto de tesis · PISA 2022</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="hero">Ansiedad matemática, rendimiento y composición escolar</div><p class="hero-sub">13 sistemas educativos de América Latina y el Caribe · PISA 2022</p><div class="thin-rule" style="max-width:640px"></div><p class="meta">Katherine Aravena Herrera<br>Magíster en Psicología Educacional · Universidad de Chile<br>Seminario de Investigación II · Guía: Lorena Ortega<br>Profesora: Natalia Albornoz</p>
+</div>
+<div class="footer"><span></span><span>01</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:20. Presentaré el proyecto de tesis sobre ansiedad matemática y rendimiento, con atención a la composición socioeconómica de las escuelas. Lo central es comprender si una relación conocida tiene distinta magnitud dependiendo de la escuela. Utilizaré PISA 2022 y estimaciones por sistema educativo. Antes de explicar cómo lo haré, comenzaré por construir la pregunta desde el problema educativo.
+:::
+
+## Diapositiva 02 {#diapositiva-02}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">TÍTULO Y RESUMEN</div>
+<h2 class="slide-title">El proyecto en una mirada</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="thesis-path"><div><strong>Problema</strong><span>Ansiedad matemática y rendimiento</span></div><div><strong>Pregunta</strong><span>¿La asociación cambia entre escuelas?</span></div><div><strong>Método</strong><span>PISA 2022 · modelos multinivel por sistema</span></div></div><div class="note-band">Foco contextual: composición socioeconómica escolar, distinta del NSE individual.</div>
+</div>
+<div class="footer"><span></span><span>02</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:30. El problema psicológico-educacional no se agota en constatar que estudiantes con más ansiedad matemática suelen rendir menos. Interesa comprender una relación entre una emoción vinculada al aprendizaje y el desempeño dentro de escuelas socialmente diferenciadas. Estudiaremos primero su asociación promedio y después preguntaremos si varía entre escuelas y si la composición socioeconómica se relaciona con esa variación. Los datos son PISA 2022; la explicación teórica irá antes de los modelos. Transición: mostraré el recorrido de la presentación.
+:::
+
+## Diapositiva 03 {#diapositiva-03}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">TÍTULO Y RESUMEN</div>
+<h2 class="slide-title">Recorrido de la presentación</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="agenda"><div><span class="agenda-n">01</span><span>Introducción: construir el problema</span></div><div><span class="agenda-n">02</span><span>Antecedentes: qué sabemos y qué falta</span></div><div><span class="agenda-n">03</span><span>Pregunta, objetivos e hipótesis</span></div><div><span class="agenda-n">04</span><span>Método: cómo estudiaremos la pregunta</span></div><div><span class="agenda-n">05</span><span>Contribución y cierre</span></div></div><p class="minor">Los aspectos formales se cuidan transversalmente. Los anexos técnicos aparecen después del cierre.</p>
+</div>
+<div class="footer"><span></span><span>03</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:15. La exposición sigue la pauta: comenzaremos con la relevancia psicológico-educacional, pasaremos a teoría y evidencia, formularemos la pregunta e hipótesis y después mostraremos cómo la estrategia multinivel permite examinarlas. Los anexos, con detalle técnico, permanecen tras el cierre. Transición: el aprendizaje matemático es también una experiencia psicológica.
+:::
+
+## Diapositiva 04 {#diapositiva-04}
+
+
+<div class="slide-inner l4 ">
+<div class="kicker nav-section">INTRODUCCIÓN</div>
+<h2 class="slide-title">El aprendizaje matemático también es una experiencia psicológica</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<img class="figure mid" src="assets/fig_psicologia_educacional.svg" alt="Tres dimensiones de la mirada psicológico-educacional: procesos cognitivos, emocionales y contextos educativos"><div class="insight">La Psicología Educacional estudia cómo se aprende y se participa en experiencias educativas, no solo los puntajes obtenidos.</div>
+</div>
+<div class="footer"><span>Pekrun (2024); Soderstrom & Bjork (2015)</span><span>04</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:55. Introduzco la investigación desde la Psicología Educacional. En matemáticas importan conocimientos, estrategias y exigencias cognitivas, pero también las emociones con las que se enfrentan las tareas y las experiencias escolares donde ocurre esa actividad. No sostengo que esta tesis mida todos esos procesos: el gráfico sitúa el problema disciplinar. Nuestro estudio observa una emoción específica, la ansiedad matemática, y un resultado educativo, el rendimiento, en escuelas que tienen composiciones socioeconómicas distintas. Transición: antes de centrarnos en esa experiencia emocional, importa recordar por qué el rendimiento matemático es una cuestión educativa relevante.
+:::
+
+## Diapositiva 05 {#diapositiva-05}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">INTRODUCCIÓN</div>
+<h2 class="slide-title">El rendimiento matemático revela desigualdades educativas</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="two"><div><p class="lead">Las matemáticas participan en trayectorias educativas y oportunidades de aprendizaje.</p><p class="body-copy">PISA 2022 documenta diferencias de rendimiento asociadas con condiciones socioeconómicas.</p></div><div><div class="number">PISA 2022</div><p class="metric-caption">Matemáticas: dominio principal</p><p class="minor">Un puntaje expresa desempeño en una evaluación; no resume toda la experiencia de aprender.</p></div></div>
+</div>
+<div class="footer"><span>OECD (2023a); BID et al. (2024)</span><span>05</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:40. Matemáticas importa para las trayectorias educativas y PISA 2022 documenta importantes diferencias de desempeño. Aquí interesa separar rendimiento medido de aprendizaje y de experiencias educativas: una evaluación captura una actuación bajo ciertas condiciones. Por eso, desde la Psicología Educacional, no basta con describir puntajes; importa preguntar qué ocurre en el plano emocional cuando se aprende, usa o rinde una evaluación matemática. Transición: ahí aparece la ansiedad matemática.
+:::
+
+## Diapositiva 06 {#diapositiva-06}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">INTRODUCCIÓN</div>
+<h2 class="slide-title">Ansiedad matemática: una emoción vinculada al aprendizaje</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="two wideleft"><div><div class="lead">Ansiedad matemática</div><p class="body-copy">Tensión, preocupación o aprensión ante situaciones que implican aprender, utilizar o ser evaluado en matemáticas.</p><p class="minor">Experiencia específica del dominio; distinta de la ansiedad general.</p></div><div><img class="figure" src="assets/fig_asociacion.svg" alt="Esquema ilustrativo de la asociación negativa promedio entre ansiedad matemática y rendimiento"><p class="minor">Asociación negativa promedio, no causalidad.</p></div></div>
+</div>
+<div class="footer"><span>Ashcraft (2002); Barroso et al. (2021); Caviola et al. (2022)</span><span>06</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:55. Ansiedad matemática nombra tensión, preocupación o aprensión ante tareas del dominio matemático. Es relevante porque involucra cómo se vive la actividad académica, no solo una disposición personal general. Metaanálisis encuentran una asociación promedio negativa con rendimiento; la flecha visual indica una asociación y no una vía causal demostrada. Tanto la preocupación que acompaña la ejecución como experiencias previas de dificultad son interpretaciones discutidas en la literatura. A continuación revisaremos qué establece la evidencia y qué cuestiones siguen abiertas antes de plantear posibles diferencias entre escuelas.
+:::
+
+## Diapositiva 07 {#diapositiva-07}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">ANTECEDENTES TEÓRICOS Y EMPÍRICOS</div>
+<h2 class="slide-title">Qué sabemos sobre ansiedad matemática y rendimiento</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="evidence-grid"><div><b>Asociación documentada</b><span>La relación promedio ansiedad-rendimiento suele ser negativa.</span></div><div><b>Relación no causal</b><span>Hay interpretaciones cognitivas y evidencia compatible con reciprocidad.</span></div><div><b>Variación observada</b><span>La magnitud difiere entre estudios; existe evidencia escolar específica.</span></div></div><div class="note-band">Evidencia directa para H2: heterogeneidad de pendientes entre escuelas en el estudio de Aaviste et al. (2026).</div>
+</div>
+<div class="footer"><span>Barroso et al. (2021); Carey et al. (2016); Aaviste et al. (2026)</span><span>07</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:50. Conviene distinguir tres aportes de la literatura. Primero, la asociación negativa entre ansiedad y rendimiento está bien documentada, especialmente en revisiones y metaanálisis. Segundo, los diseños observacionales no identifican una dirección causal; la literatura longitudinal discute procesos recíprocos. Tercero, no toda la evidencia de heterogeneidad es del mismo tipo: variación entre estudios no demuestra variación entre escuelas. Para esta última, Aaviste y colegas examinan PISA 2022 en Estonia y reportan heterogeneidad escolar del gradiente. Esta evidencia se acerca específicamente a H2, pero todavía no responde H3. Transición: necesitamos una teoría para interpretar cómo se originan las experiencias emocionales de logro.
+:::
+
+## Diapositiva 08 {#diapositiva-08}
+
+
+<div class="slide-inner l4 ">
+<div class="kicker nav-section">ANTECEDENTES TEÓRICOS Y EMPÍRICOS</div>
+<h2 class="slide-title">Control-Valor: las emociones de logro son situadas</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<img class="diagram-extended" src="assets/fig_cvt_ampliado.svg" alt="Esquema de la teoría Control-Valor, separando experiencias y valoraciones no medidas de la asociación observada entre ansiedad matemática y rendimiento"><p class="theory-caption">CVT orienta la interpretación; control, valor y posibles mediaciones no son variables evaluadas en esta tesis. SEVT complementa la comprensión de la socialización y las expectativas.</p>
+</div>
+<div class="footer"><span>Pekrun (2006, 2024); Putwain et al. (2021); Eccles & Wigfield (2020)</span><span>08</span></div>
+</div>
+
+::: {.notes}
+Tiempo 1:15. La Teoría de Control-Valor explica las emociones académicas a partir de valoraciones sobre cuánto importa una tarea o resultado y cuánto control cree tener el estudiante para afrontarlo. Cuando algo importa y el control se percibe como incierto, la ansiedad resulta teóricamente comprensible. Estas valoraciones pueden estar relacionadas con experiencias de éxito o dificultad, retroalimentación, apoyo y demandas de evaluación. Esa es la conexión con la Psicología Educacional: las emociones no se conceptualizan aisladas de las situaciones de aprendizaje. La SEVT complementa este encuadre al dar importancia a expectativas de éxito, valores y socialización, sin desplazar a CVT. Es fundamental subrayar que esta tesis no mide control, valor, apoyo ni retroalimentación; no está estimando una mediación. Tampoco la CVT demuestra que las pendientes difieran entre escuelas. Nos ofrece razones para hacer la pregunta, que sigue siendo empírica. Transición: veamos exactamente cuál es esa diferencia que queremos investigar.
+:::
+
+## Diapositiva 09 {#diapositiva-09}
+
+
+<div class="slide-inner l4 ">
+<div class="kicker nav-section">ANTECEDENTES TEÓRICOS Y EMPÍRICOS</div>
+<h2 class="slide-title">Promedios distintos no significan asociaciones distintas</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<img class="diagram-extended" src="assets/fig_promedios_pendientes.svg" alt="Esquema conceptual: líneas paralelas con interceptos distintos frente a líneas con pendientes diferentes"><div class="bridge-points"><div><b>Niveles promedio</b>Las escuelas pueden diferir en ansiedad o rendimiento medio.</div><div><b>Pendiente intraescuela</b>Describe cómo se asocian ansiedad y rendimiento dentro de cada escuela.</div><div><b>Pregunta H2</b>¿La intensidad de esa asociación varía entre escuelas?</div></div>
+</div>
+<div class="footer"><span>Aaviste et al. (2026); Pekrun (2024)</span><span>09</span></div>
+</div>
+
+::: {.notes}
+Tiempo 1:10. Esta distinción es fundamental para que H2 no se confunda con diferencias entre escuelas en promedio. En la mitad izquierda del gráfico, dos líneas paralelas pueden estar situadas a distintas alturas: los niveles de rendimiento cambian, pero la intensidad de la asociación es igual. A la derecha las líneas tienen inclinaciones distintas: aquí sí cambia la pendiente, que representa la magnitud de la asociación entre estudiantes de la misma escuela. Teóricamente es pertinente considerar estas variaciones: experiencias de evaluación, retroalimentación y valoraciones pueden ser distintas, al igual que las demandas de las tareas. Sin embargo, esos procesos no se miden y no garantizan que aparezca heterogeneidad. Esta es precisamente la pregunta H2. El gráfico es conceptual. Transición: si encontramos diferencias de pendientes, ¿qué dimensión escolar podemos observar para comprender parte de ese patrón?
+:::
+
+## Diapositiva 10 {#diapositiva-10}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">ANTECEDENTES TEÓRICOS Y EMPÍRICOS</div>
+<h2 class="slide-title">Por qué examinar la composición socioeconómica escolar</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<img class="figure mid" src="assets/fig_composicion.svg" alt="Distribuciones socioeconómicas ilustrativas de escuelas A y B: posición individual semejante y composiciones distintas"><div class="insight">La composición describe el perfil social agregado de una escuela; no mide directamente clima, apoyos o recursos.</div>
+</div>
+<div class="footer"><span>Avvisati & Wuyts (2024); Sciffer et al. (2022a, 2022b)</span><span>10</span></div>
+</div>
+
+::: {.notes}
+Tiempo 1:10. La composición socioeconómica representa el promedio del perfil socioeconómico de quienes asisten a una escuela. Esto no es equivalente a la posición individual del estudiante: alguien con un ESCS similar puede asistir a establecimientos de composición muy diferente. Es una dimensión observable de las diferencias sociales entre contextos escolares. La literatura sobre composición documenta asociaciones con resultados educativos, y otras investigaciones examinan experiencias emocionales en ambientes educativos. Sin embargo, ni una ni otra demuestra automáticamente que la composición modere la pendiente entre ansiedad y rendimiento. Tampoco la composición es una medida de calidad, clima, recursos, apoyo o segregación; esos mecanismos exigirían datos propios. La elegimos como característica contextual focal para preguntar si parte de la variación de pendientes se relaciona sistemáticamente con ella. Transición: podemos precisar la brecha que queda entre estos cuerpos de evidencia.
+:::
+
+## Diapositiva 11 {#diapositiva-11}
+
+
+<div class="slide-inner l4 ">
+<div class="kicker nav-section">ANTECEDENTES TEÓRICOS Y EMPÍRICOS</div>
+<h2 class="slide-title">La brecha conecta emociones, escuelas y composición</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="evidence-pillar"><div><span class="evidtype">Evidencia consolidada</span><h3>Ansiedad y rendimiento</h3><p>Asociación promedio negativa documentada.</p></div><div><span class="evidtype">Evidencia más próxima a H2</span><h3>Heterogeneidad escolar</h3><p>La magnitud del gradiente puede diferir entre escuelas.</p></div><div><span class="evidtype">Evidencia contextual indirecta</span><h3>Composición escolar</h3><p>Se asocia con resultados educativos; no demuestra moderación del gradiente.</p></div></div><div class="note-band">Brecha específica: ¿la composición escolar se relaciona con la magnitud de la asociación intraescuela ansiedad–rendimiento?</div>
+</div>
+<div class="footer"><span>Barroso et al. (2021); Aaviste et al. (2026); Sciffer et al. (2022a, 2022b)</span><span>11</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:55. La brecha no es que no sepamos nada sobre emociones o contextos. Hay evidencia robusta sobre asociación ansiedad-rendimiento; evidencia más próxima a H2 de heterogeneidad entre escuelas; y literatura que asocia composición escolar con resultados educativos. Son piezas relacionadas pero no intercambiables. En particular, mostrar diferencias de ansiedad promedio entre escuelas o asociaciones de composición con el rendimiento no equivale a demostrar una interacción entre composición y la pendiente ansiedad-rendimiento. Guzmán y colegas, en un estudio longitudinal chileno, aportan evidencia sobre vulnerabilidad escolar y ansiedad, pero no estiman nuestra interacción focal. Por eso proponemos examinarla, sin anticipar su signo. Si el vínculo no aparece, también será informativo. Transición: con ese recorrido estamos en condiciones de formular la pregunta formal.
+:::
+
+## Diapositiva 12 {#diapositiva-12}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">PREGUNTA, OBJETIVOS E HIPÓTESIS</div>
+<h2 class="slide-title">Pregunta de investigación</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<p class="quote-question">¿Cómo varía la asociación intraescuela entre ansiedad matemática y rendimiento matemático entre escuelas de 13 sistemas educativos de América Latina y el Caribe, cómo se compara su magnitud promedio entre sistemas y en qué medida la heterogeneidad entre escuelas se relaciona con la composición socioeconómica escolar en PISA 2022?</p>
+</div>
+<div class="footer"><span></span><span>12</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:40. La pregunta definitiva reúne tres componentes: cómo se asocian ansiedad y rendimiento dentro de las escuelas, cómo varía esa relación entre escuelas y sistemas, y en qué medida la variación entre escuelas se relaciona con su composición socioeconómica. Es importante que la comparación posterior entre sistemas no se confunda con H2, que se evalúa dentro de cada sistema. Esta pregunta surge de una brecha específica de la literatura; no presupone que la composición produzca causalmente las diferencias. Transición: la traducimos en tres objetivos analíticos.
+:::
+
+## Diapositiva 13 {#diapositiva-13}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">PREGUNTA, OBJETIVOS E HIPÓTESIS</div>
+<h2 class="slide-title">Un objetivo general y tres pasos específicos</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="objective-general"><strong>Objetivo general</strong><span>Analizar la asociación intraescuela entre ansiedad matemática y rendimiento matemático, su variación entre escuelas y su comparación entre 13 sistemas educativos de América Latina y el Caribe, y examinar si su magnitud difiere según la composición socioeconómica escolar mediante datos de PISA 2022.</span></div><div class="objective-step"><b>OE1</b><span>Estimar y comparar la dirección y magnitud promedio de la asociación intraescuela entre ansiedad matemática y rendimiento matemático en los sistemas educativos considerados.</span></div><div class="objective-step"><b>OE2</b><span>Examinar la variación entre escuelas en la magnitud de la asociación intraescuela entre ansiedad matemática y rendimiento matemático en los sistemas educativos considerados.</span></div><div class="objective-step"><b>OE3</b><span>Examinar si la magnitud de la asociación intraescuela entre ansiedad matemática y rendimiento matemático difiere según la composición socioeconómica escolar, distinguiendo esta dimensión contextual de la posición socioeconómica individual de los estudiantes.</span></div>
+</div>
+<div class="footer"><span></span><span>13</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:45. El objetivo general busca analizar la asociación intraescuela, su heterogeneidad escolar y su relación con composición, incluyendo la comparación entre sistemas. Los objetivos específicos siguen un orden lógico: estimar el gradiente promedio y compararlo; examinar si ese gradiente varía entre escuelas; y evaluar si esa variación está relacionada con la composición agregada, distinguiéndola del ESCS del estudiante. Cada objetivo tiene su correspondencia en la estrategia multinivel que veremos enseguida. Transición: las tres hipótesis formulan expectativas contrastables sin convertir la composición en un mecanismo medido.
+:::
+
+## Diapositiva 14 {#diapositiva-14}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">PREGUNTA, OBJETIVOS E HIPÓTESIS</div>
+<h2 class="slide-title">H1, H2 y H3: de la asociación al contexto</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="hyp-list"><div class="hyp"><div class="hyp-tag">H1</div><div class="hyp-text">Dentro de las escuelas, mayores niveles de ansiedad matemática se asociarán con menor rendimiento matemático.</div></div><div class="hyp"><div class="hyp-tag">H2</div><div class="hyp-text">La magnitud de la asociación intraescuela entre ansiedad matemática y rendimiento matemático variará entre escuelas.</div></div><div class="hyp"><div class="hyp-tag">H3</div><div class="hyp-text">La magnitud de la asociación intraescuela entre ansiedad matemática y rendimiento matemático diferirá según la composición socioeconómica escolar.</div></div></div><p class="minor">H1: asociación · H2: diferencias entre escuelas · H3: composición y diferencias</p>
+</div>
+<div class="footer"><span></span><span>14</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:55. H1 propone que, dentro de una misma escuela, estudiantes con mayor ansiedad matemática tienden a mostrar menor rendimiento. H2 propone que la pendiente que representa esa relación no tiene exactamente la misma magnitud en todas las escuelas. H3 examina si esa heterogeneidad presenta un patrón sistemático según composición socioeconómica. Su formulación es no direccional porque la literatura disponible no fundamenta suficientemente una predicción única de mayor o menor intensidad en escuelas con cierta composición. Conservar literalmente las hipótesis importa: H2 no es diferencia de promedios ni de países; H3 es interacción, no efecto principal de composición. Transición: antes de pasar a los datos, veremos qué representa visualmente cada una de estas tres hipótesis.
+:::
+
+## Diapositiva 15 {#diapositiva-15}
+
+<div class="slide-inner l4 hyp-visual-slide">
+<div class="kicker nav-section">PREGUNTA, OBJETIVOS E HIPÓTESIS</div>
+<h2 class="slide-title">¿Qué significa cada hipótesis?</h2>
+<div class="toprule"></div>
+<div class="slide-content hyp-visual-body">
+<div class="figure-zone"><img class="hyp-triad" src="assets/fig_hipotesis_grandes.svg" alt="Esquemas conceptuales grandes: H1 una pendiente negativa en una escuela; H2 pendientes de magnitud diferente entre escuelas; H3 pendientes escolares relacionadas hipotéticamente con composición en direcciones alternativas"></div>
+<div class="note-band hyp-note">Tres preguntas sobre la misma relación: <strong>asociación · variación · moderación</strong>.</div>
+<p class="hyp-caption">Esquemas conceptuales, no resultados de PISA 2022. H3 no anticipa la dirección del efecto.</p>
+</div>
+<div class="footer"><span></span><span>15</span></div>
+</div>
+
+::: {.notes}
+Tiempo 1:00. Los tres dibujos sintetizan, después de leer las hipótesis, exactamente qué vamos a contrastar. A la izquierda, H1 pregunta por la asociación de ansiedad y rendimiento entre estudiantes de una misma escuela: su pendiente promedio se espera negativa. En el centro, H2 pregunta si esa pendiente tiene la misma inclinación en todos los establecimientos; dos líneas con inclinaciones diferentes representan heterogeneidad escolar, no promedios distintos. A la derecha, H3 toma como resultado de interés esas pendientes escolares y pregunta si su variación se relaciona con la composición socioeconómica. Las dos orientaciones ilustrativas del último panel muestran que no anticipamos un signo único de γ₁₁. No son datos ni resultados. Esta representación no convierte la composición en una causa ni mide los procesos psicológicos propuestos. Así pasamos de la explicación conceptual a la pregunta metodológica: ¿cómo mediremos y analizaremos estas relaciones con PISA 2022?
+:::
+
+## Diapositiva 16 {#diapositiva-16}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">MÉTODO</div>
+<h2 class="slide-title">PISA 2022: diseño y muestra</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="metrics"><div class="metric"><div class="number">62.032</div><p class="metric-caption">estudiantes</p></div><div class="metric"><div class="number">3.703</div><p class="metric-caption">escuelas</p></div><div class="metric"><div class="number">13</div><p class="metric-caption">sistemas educativos</p></div></div><p class="minor">Estudio observacional, transversal y de análisis secundario; estimación separada por sistema.</p><div class="note-band">El total descriptivo no es una muestra probabilística regional única.</div>
+</div>
+<div class="footer"><span>OECD (2023a, 2024b)</span><span>16</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:45. Usaremos microdatos secundarios de PISA 2022, una evaluación internacional de estudiantes de aproximadamente quince años. La muestra analítica comprende 62.032 estudiantes en 3.703 escuelas de 13 sistemas de América Latina y el Caribe. Se incluyen registros válidos de las variables principales; Costa Rica no se incorporó por la falta de cobertura comparable de ESCS. El estudio es observacional y transversal. Cada sistema se analizará por separado; la suma de participantes es descriptiva y no autoriza generalizar como si fuera una sola muestra probabilística regional.
+:::
+
+## Diapositiva 17 {#diapositiva-17}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">MÉTODO</div>
+<h2 class="slide-title">Qué mediremos y por qué centramos</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="two"><div><div class="small-label">Nivel estudiante</div><div class="three-stripes"><div class="stripe">Rendimiento: diez valores plausibles</div><div class="stripe">Ansiedad matemática: ANXMAT</div><div class="stripe">NSE: ESCS individual · Género</div></div></div><div><div class="small-label">Nivel escuela</div><div class="three-stripes"><div class="stripe">Composición: promedio escolar ponderado de ESCS</div></div><p class="body-copy">Centrar: comparar a cada estudiante con el promedio de su escuela.</p><p class="minor">La composición se centra respecto del promedio del sistema.</p></div></div>
+</div>
+<div class="footer"><span>OECD (2024b); Enders & Tofighi (2007)</span><span>17</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:55. La unidad individual incluye rendimiento matemático representado por diez valores plausibles, ansiedad matemática, ESCS individual y género como covariable. En el nivel escuela usamos la composición socioeconómica, promedio ponderado del ESCS escolar construido antes del filtro completo de casos. ANXMAT y ESCS individuales se centran en el promedio escolar ponderado; eso expresa en qué se diferencia cada estudiante de sus compañeros, y permite interpretar la pendiente como intraescuela. La composición se centra respecto de la media del sistema, conservando la escala. Estas transformaciones no equivalen a estandarizar. Transición: los datos están organizados en estudiantes dentro de escuelas.
+:::
+
+## Diapositiva 18 {#diapositiva-18}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">MÉTODO</div>
+<h2 class="slide-title">Primero estudiantes; después diferencias entre escuelas</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="figure-zone"><img class="figure" src="assets/fig_multinivel.svg" alt="Estudiantes agrupados por escuelas y sistemas separados"></div><p class="minor">Multinivel = estudiar relaciones entre estudiantes y diferencias entre escuelas simultáneamente.</p>
+</div>
+<div class="footer"><span></span><span>18</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:55. Las escuelas agrupan estudiantes y ofrecen un contexto compartido. Un modelo multinivel representa simultáneamente la variación entre estudiantes y entre escuelas. Aquí el foco no consiste solo en permitir interceptos distintos sino, desde M3, pendientes de ansiedad que pueden variar entre escuelas. Los sistemas se estiman separadamente y luego se comparan, no como un tercer nivel estadístico. Este diseño permite examinar heterogeneidad pero no identificar causalidad. Transición: muestro la secuencia mínima de modelos que responde cada parte de la pregunta.
+:::
+
+## Diapositiva 19 {#diapositiva-19}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">MÉTODO</div>
+<h2 class="slide-title">Seis modelos, cada uno añade una pregunta</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="figure-zone"><img class="figure" src="assets/fig_modelos.svg" alt="Progresión de seis modelos multinivel M0 a M5"></div><p class="minor">M3: asociación y heterogeneidad escolar (H1–H2) · M5: interacción con composición (H3).</p>
+</div>
+<div class="footer"><span></span><span>19</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:55. Comenzamos con M0, un modelo vacío sin predictores, para observar diferencias de rendimiento entre escuelas. M1 incorpora ansiedad; M2 agrega ESCS individual y género. M3 permite que la pendiente de ansiedad varíe entre escuelas, por eso es central para H1 y H2. M4 añade la composición escolar como característica contextual; todavía no prueba H3. Finalmente M5 incorpora la interacción entre ansiedad individual y composición escolar, que sí corresponde a H3. Ninguna de estas etapas implica por sí misma una explicación causal.
+:::
+
+## Diapositiva 20 {#diapositiva-20}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">MÉTODO</div>
+<h2 class="slide-title">Cómo se responde cada hipótesis</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="parameter-map"><div><span class="param">H1 · γ₁₀</span><b>¿Existe asociación negativa dentro de escuelas?</b></div><div><span class="param">H2 · τ₁₁</span><b>¿La pendiente cambia entre escuelas?</b></div><div><span class="param">H3 · γ₁₁</span><b>¿Se relaciona con la composición?</b></div></div><p class="minor">H1/H2: M3 · H3: M5 · H3 no anticipa signo.</p>
+</div>
+<div class="footer"><span>Preacher et al. (2006)</span><span>20</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:55. Solo ahora introduzco los símbolos. Gamma diez representa la asociación promedio intraescuela entre ansiedad y rendimiento en la especificación usada para H1. Tau once representa la varianza de esa pendiente entre escuelas, y por tanto H2. Gamma once representa la interacción entre ansiedad individual y composición escolar, que examina H3 en M5. Se interpretará con pendientes simples de composición. Esta notación resume preguntas que ya conocemos; si se necesitan las ecuaciones completas, están disponibles al final en los anexos.
+:::
+
+## Diapositiva 21 {#diapositiva-21}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">MÉTODO</div>
+<h2 class="slide-title">Estimación y robustez sin perder la pregunta</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="three-stripes"><div class="stripe">Diez valores plausibles: estimar y combinar resultados</div><div class="stripe">Pesos muestrales: respetar estudiantes y escuelas</div><div class="stripe">Sensibilidades: comprobar estabilidad de los hallazgos</div></div><p class="minor">Después: comparar y sintetizar los 13 sistemas, sin tratarlos como tercer nivel.</p>
+</div>
+<div class="footer"><span>OECD (2024b); Huang (2024)</span><span>21</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:50. Para que la estrategia respete la forma en que PISA mide y selecciona a estudiantes, analizaremos los diez valores plausibles separadamente y combinaremos las estimaciones. También consideraremos los pesos en ambos niveles en la estimación principal. Después haremos comprobaciones de sensibilidad: escuelas pequeñas, composición extrema, especificaciones alternativas y ajustes por sector o localización comparando sobre una misma submuestra. Finalmente compararemos estimaciones entre sistemas; esta síntesis no crea un nivel adicional. Son controles de robustez para una pregunta concreta, no un proyecto metodológico paralelo.
+:::
+
+## Diapositiva 22 {#diapositiva-22}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">MÉTODO</div>
+<h2 class="slide-title">Consideraciones éticas</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="ethics-only-grid" aria-label="Tres consideraciones éticas del estudio">
+  <div class="ethics-item">
+    <h3>Uso de datos secundarios</h3>
+    <p>Microdatos públicos de PISA 2022.</p>
+  </div>
+  <div class="ethics-item">
+    <h3>Protección de participantes</h3>
+    <p>Sin reclutamiento directo ni intentos de reidentificación.</p>
+  </div>
+  <div class="ethics-item">
+    <h3>Comunicación responsable</h3>
+    <p>Resultados agregados y presentación no estigmatizante de escuelas y sistemas educativos.</p>
+  </div>
+</div>
+</div>
+<div class="footer"><span>Facultad de Ciencias Sociales, Universidad de Chile (2025)</span><span>22</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:35. El estudio utilizará microdatos secundarios públicos de PISA 2022, sin contacto directo ni reclutamiento de participantes. Se evitará cualquier intento de reidentificar personas o establecimientos. Al presentar los hallazgos, comunicaremos resultados agregados y tendremos especial cuidado con las comparaciones entre escuelas y sistemas educativos para evitar interpretaciones estigmatizantes. La disponibilidad pública de los datos no elimina estas responsabilidades éticas. Transición: con estas precauciones, cierro señalando la contribución esperada del estudio.
+
+:::
+
+## Diapositiva 23 {#diapositiva-23}
+
+
+<div class="slide-inner l3 ">
+<div class="kicker nav-section">CONTRIBUCIÓN Y CIERRE</div>
+<h2 class="slide-title">Contribución: comprender una relación psicológica situada</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="big-question">Precisar <em>si</em> y <em>cómo</em> cambia entre escuelas una asociación psicológica vinculada con el aprendizaje matemático.</div><div class="three-stripes"><div class="stripe">Psicología Educacional: ansiedad matemática como experiencia emocional situada</div><div class="stripe">Contexto: composición socioeconómica distinta del NSE individual y de mecanismos no medidos</div><div class="stripe">Comparación: estimaciones en 13 sistemas educativos, sin homogeneizar la región</div></div><p class="minor">Alcance: asociaciones observacionales, no explicaciones causales.</p>
+</div>
+<div class="footer"><span></span><span>23</span></div>
+</div>
+
+::: {.notes}
+Tiempo 0:55. Vuelvo a la Psicología Educacional: el problema no es solo estadístico. Queremos precisar el alcance contextual de una relación psicológica ampliamente documentada, distinguiendo lo que ocurre entre estudiantes dentro de una escuela de diferencias entre escuelas. Si la composición se asocia con la variación de pendientes, tendremos un patrón contextual descriptivo relevante; si no aparece, también acotaremos lo que esa dimensión puede explicar. No podremos afirmar que apoyo, clima o valoraciones median causalmente el patrón, porque no se observan de forma directa y el diseño es transversal. La comparación entre 13 sistemas permite ampliar la descripción sin tratarlos como una región homogénea. Muchas gracias; los anexos siguientes son solo para preguntas.
+:::
+
+## Diapositiva 24 {#diapositiva-24}
+
+
+<div class="slide-inner l3 backup">
+<div class="kicker nav-section">ANEXOS</div>
+<h2 class="slide-title">ANEXO A · Modelo M5 completo</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="m5-layout" aria-label="Modelo M5 completo, ecuaciones por niveles y forma combinada">
+  <div class="m5-combined">
+    <div class="m5-section-label">Ecuación combinada · modelo M5</div>
+    <div class="m5-formula" role="math" aria-label="Rendimiento igual a gamma cero cero, más gamma cero uno por composición, más gamma uno cero por ansiedad, más gamma uno uno por la interacción entre ansiedad y composición, más gamma dos cero por nivel socioeconómico individual, más gamma tres cero por mujer, más intercepto aleatorio, más pendiente aleatoria por ansiedad, más error individual">
+      <div>Y<sub>ij</sub> = γ<sub>00</sub> + γ<sub>01</sub> Comp<sub>j</sub> + γ<sub>10</sub> Ansiedad<sub>ij</sub></div>
+      <div>+ <span class="m5-interaction">γ<sub>11</sub> (Ansiedad<sub>ij</sub> × Comp<sub>j</sub>)</span> + γ<sub>20</sub> NSE<sub>ij</sub></div>
+      <div>+ γ<sub>30</sub> Mujer<sub>ij</sub> + u<sub>0j</sub> + u<sub>1j</sub> Ansiedad<sub>ij</sub> + e<sub>ij</sub></div>
+    </div>
+  </div>
+  <div class="m5-levels">
+    <div class="m5-level">
+      <div class="m5-section-label">Nivel 1 · Estudiantes</div>
+      <div class="m5-level-math">
+        <div>Y<sub>ij</sub> = β<sub>0j</sub> + β<sub>1j</sub> Ansiedad<sub>ij</sub> +</div>
+        <div>β<sub>2j</sub> NSE<sub>ij</sub> + β<sub>3j</sub> Mujer<sub>ij</sub> + e<sub>ij</sub></div>
+      </div>
+    </div>
+    <div class="m5-level">
+      <div class="m5-section-label">Nivel 2 · Escuelas</div>
+      <div class="m5-level-math m5-school">
+        <div>β<sub>0j</sub> = γ<sub>00</sub> + γ<sub>01</sub> Comp<sub>j</sub> + u<sub>0j</sub></div>
+        <div>β<sub>1j</sub> = γ<sub>10</sub> + γ<sub>11</sub> Comp<sub>j</sub> + u<sub>1j</sub></div>
+        <div>β<sub>2j</sub> = γ<sub>20</sub> ; β<sub>3j</sub> = γ<sub>30</sub></div>
+      </div>
+    </div>
+  </div>
+  <div class="m5-takeaway"><b>H2</b> · Var(u<sub>1j</sub>) = τ<sub>11</sub> <span class="m5-dot">·</span> <b>H3</b> · γ<sub>11</sub> (interacción) <span class="m5-dot">·</span> Asociaciones, no causalidad.</div>
+</div>
+</div>
+<div class="footer"><span></span><span>ANEXO A</span></div>
+</div>
+
+::: {.notes}
+Anexo A. El modelo M5 completo puede expresarse por niveles o en una sola ecuación, sustituyendo las ecuaciones escolares en la ecuación de estudiantes. En la expresión combinada, γ00 es el intercepto de referencia; γ01 corresponde a la asociación de la composición con el nivel esperado de rendimiento; γ10 representa el gradiente de ansiedad cuando la composición escolar está en la media del sistema; γ11 multiplica la interacción entre ansiedad y composición y es el parámetro focal de H3; γ20 y γ30 corresponden a NSE individual y mujer. u0j y u1j son el intercepto y la pendiente aleatorios de escuela, y eij es el residual individual. La varianza τ11 expresa heterogeneidad residual entre escuelas, después de ajustar por composición en M5. H1 y H2 se evalúan inicialmente en M3; H3, en M5. Ansiedad y NSE individuales están centrados en medias escolares ponderadas, y composición en la media del sistema. El modelo caracteriza asociaciones observacionales, no efectos causales.
+:::
+
+## Diapositiva 25 {#diapositiva-25}
+
+
+<div class="slide-inner l3 backup">
+<div class="kicker nav-section">ANEXOS</div>
+<h2 class="slide-title">ANEXO B · Cómo funciona el centramiento</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="two"><div><div class="small-label">Dentro de la escuela</div><p class="body-copy">Ansiedad_W = Ansiedad individual − promedio ponderado escolar</p><p class="body-copy">ESCS_W = ESCS individual − promedio ponderado escolar</p></div><div><div class="small-label">Entre escuelas</div><p class="body-copy">Composición = media escolar ponderada de ESCS</p><p class="body-copy">Composición_C = composición − promedio del sistema</p></div></div><div class="note-band">Centrar no impide modelar pendientes diferentes entre escuelas (τ₁₁).</div>
+</div>
+<div class="footer"><span></span><span>ANEXO B</span></div>
+</div>
+
+::: {.notes}
+Anexo B. Los predictores individuales están expresados como diferencias respecto a sus medias escolares, preservando unidad original. La composición se calculó previamente al filtro completo de variables y después se centró dentro de cada sistema. El centramiento quita diferencia de medias de predictores pero no variación de las pendientes entre escuelas.
+:::
+
+## Diapositiva 26 {#diapositiva-26}
+
+
+<div class="slide-inner l3 backup">
+<div class="kicker nav-section">ANEXOS</div>
+<h2 class="slide-title">ANEXO C · Valores plausibles y ponderación</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="three-stripes"><div class="stripe">Rendimiento: PV1MATH … PV10MATH, no promediar por persona</div><div class="stripe">Modelo principal: WeMix, pesos de estudiante y escuela</div><div class="stripe">Combinar estimaciones e incertidumbres a través de PV</div></div><p class="minor">Comprobaciones adicionales: lme4 y enfoques con diseño complejo.</p>
+</div>
+<div class="footer"><span>OECD (2024b); Huang (2024)</span><span>ANEXO C</span></div>
+</div>
+
+::: {.notes}
+Anexo C. PISA representa rendimiento con valores plausibles, no diez puntuaciones observadas de una misma persona. Se estiman modelos por valor plausible; luego se combina inferencia mediante reglas apropiadas. Los pesos de estudiante y escuela permiten considerar el diseño de la muestra. Se analizarán sensibilidades con alternativas de estimación.
+:::
+
+## Diapositiva 27 {#diapositiva-27}
+
+
+<div class="slide-inner l3 backup">
+<div class="kicker nav-section">ANEXOS</div>
+<h2 class="slide-title">ANEXO D · Qué significa una interacción transnivel</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="figure-zone"><img class="figure" src="assets/fig_moderacion.svg" alt="Pendientes ilustrativas de ansiedad según composición socioeconómica escolar"></div><div class="note-band">Ejemplo conceptual; H3 es no direccional y no constituye un resultado de PISA.</div>
+</div>
+<div class="footer"><span>Preacher et al. (2006)</span><span>ANEXO D</span></div>
+</div>
+
+::: {.notes}
+Anexo D. La hipótesis focal pregunta si la pendiente de ansiedad dentro de una escuela cambia según su composición. Gamma 11 es un parámetro de interacción, no una prueba causal. Se planea examinar pendientes simples en percentiles 10, 50 y 90 dentro de cada sistema. El dibujo es ilustrativo y no anticipa signo ni magnitud real de resultados.
+:::
+
+## Diapositiva 28 {#diapositiva-28}
+
+
+<div class="slide-inner l3 backup">
+<div class="kicker nav-section">ANEXOS</div>
+<h2 class="slide-title">ANEXO E · Robustez y sensibilidades</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="two"><div><div class="three-stripes"><div class="stripe">Escuelas pequeñas: N≥5 y N≥10</div><div class="stripe">Composición extrema o no ponderada</div><div class="stripe">Sensibilidad cuadrática de ansiedad</div></div></div><div><div class="three-stripes"><div class="stripe">Sector/localización con submuestra equivalente</div><div class="stripe">Estimadores alternativos y diagnósticos</div><div class="stripe">Síntesis leave-one-system-out</div></div></div></div>
+</div>
+<div class="footer"><span></span><span>ANEXO E</span></div>
+</div>
+
+::: {.notes}
+Anexo E. Estos análisis secundarios evalúan estabilidad ante reglas muestrales, construcción y forma funcional. Para sector y localización, cuando haya faltantes, se vuelve a ajustar M5 en la misma submuestra antes de agregar la covariable; así no se confunde efecto de selección muestral con cambio por ajuste. También se analizan convergencia y límites de varianza.
+:::
+
+## Diapositiva 29 {#diapositiva-29}
+
+
+<div class="slide-inner l3 backup">
+<div class="kicker nav-section">ANEXOS</div>
+<h2 class="slide-title">ANEXO F · Límites y comparabilidad</h2>
+<div class="toprule"></div>
+<div class="slide-content">
+<div class="three-stripes"><div class="stripe">ESCS: equivalencia internacional no necesariamente perfecta</div><div class="stripe">Composición basada en estudiantes muestreados, no matrícula completa</div><div class="stripe">PISA 2022 transversal: asociación, no causalidad</div></div><p class="minor">Los 13 sistemas no son una muestra probabilística regional única.</p>
+</div>
+<div class="footer"><span>Treviño et al. (2021); Televantou et al. (2015)</span><span>ANEXO F</span></div>
+</div>
+
+::: {.notes}
+Anexo F. Comparar coeficientes de 13 sistemas requiere cautela por diferencias potenciales en medición socioeconómica. La composición incluye error de muestreo/medición y las sensibilidades no constituyen corrección formal de ese error. También pueden existir contextos familiares relevantes fuera de la escuela. La tesis no propone inferencia causal ni extrapolación probabilística al conjunto de América Latina y el Caribe.
+:::
