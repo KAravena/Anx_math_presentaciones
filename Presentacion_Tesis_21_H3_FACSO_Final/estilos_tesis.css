@@ -1,0 +1,150 @@
+/* Presentación académica · blanco puro y escala violeta */
+:root{--bg:#FFFFFF;--ink:#302A38;--muted:#6B6571;--primary:#4B2875;--secondary:#67418A;--medium:#8969AB;--lavender:#B9A0CF;--line:#E6DBEF;--pale:#F5F0FA}
+*{box-sizing:border-box}
+html,body{margin:0;background:#FFFFFF;color:var(--ink);font-family:'Aptos','Source Sans 3','Segoe UI',Arial,sans-serif}
+body{overflow:hidden}#viewport{position:relative;width:100vw;height:100vh;overflow:hidden;background:#FFFFFF}
+.slide{position:absolute;display:none;overflow:hidden;width:1280px;height:720px;background:#FFFFFF;box-shadow:none;transform-origin:top left}
+.slide.active{display:block}
+/* Editorial line: thin, light, with one dark segment */
+.slide:before{content:'';position:absolute;left:82px;right:82px;top:55px;height:1.5px;background:#E6DBEF;z-index:1}
+.slide:after{content:'';position:absolute;left:82px;top:54.5px;width:178px;height:4px;background:#4B2875;z-index:2}
+.topbar{position:absolute;left:84px;right:84px;top:81px;display:flex;justify-content:space-between;align-items:center;color:#67418A;font-size:16px;font-weight:720;letter-spacing:1.8px}
+.chapter{font-size:15px;letter-spacing:.8px;color:#81758D;font-weight:540}
+.slide h1{position:absolute;left:84px;right:84px;top:129px;margin:0;color:#302A38;max-width:1108px;font-size:43px;line-height:1.13;letter-spacing:-.75px;font-weight:690}
+.slide.large-head h1{font-size:41px;line-height:1.15}
+.art{position:absolute;left:87px;right:87px;top:219px;height:350px;display:flex;align-items:center;justify-content:center}
+.art svg{width:100%;height:100%;display:block;overflow:hidden}
+.footer{position:absolute;left:84px;right:84px;bottom:23px;height:39px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #E6DBEF;padding-top:11px;gap:25px}
+.sources{font-size:15px;color:#6B6571;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:1040px}
+.page-number{font-size:17px;font-weight:700;color:#67418A}
+.bottom-takeaway{position:absolute;left:86px;right:86px;top:581px;min-height:52px;display:flex;align-items:center;border-left:3px solid #67418A;padding:5px 0 5px 19px;color:#302A38;font-size:23px;font-weight:600;background:transparent;line-height:1.26}
+.evidence-mark{position:absolute;right:97px;top:392px;max-width:235px;color:#6B6571;font-size:18px;line-height:1.34;background:#FFFFFF;padding:6px 8px}
+.evidence-mark .number{font-size:54px;color:#4B2875;font-weight:730;margin-bottom:6px}
+.slide[data-id="03"] .art svg text:nth-last-of-type(-n+2){display:none}
+.slide[data-id="10"] .art{top:203px;height:367px}
+.slide[data-id="12"] .art{top:229px;height:341px}
+
+
+
+.art svg [data-phase]{transition:opacity .25s ease}
+/* Cover: full typographic title page, strictly without any graphic */
+.slide.cover .topbar,.slide.cover .art,.slide.cover .bottom-takeaway,.slide.cover .footer,.slide.cover>h1,.slide.cover .identity,.slide.cover .concept-tag{display:none!important}
+.slide.cover:before{top:65px;left:83px;right:83px}
+.slide.cover:after{top:63.5px;left:83px;width:196px;height:5px}
+.cover-institution{position:absolute;top:97px;right:88px;width:435px;text-align:right;display:flex;flex-direction:column;gap:5px;font-size:16px;color:#6B6571;letter-spacing:.35px;line-height:1.26}
+.cover-institution strong{font-size:19px;font-weight:760;color:#4B2875;letter-spacing:.9px}
+.cover-main{position:absolute;left:83px;right:88px;top:214px}
+.cover-kicker{font-size:15px;letter-spacing:2.2px;color:#67418A;font-weight:770;margin-bottom:25px}
+.cover-title{font:normal 63px/1.075 Georgia,'Times New Roman',serif;color:#302A38;letter-spacing:-1.65px;max-width:1110px;margin:0}
+.cover-title .title-accent{color:#4B2875}
+.cover-subtitle{margin-top:24px;max-width:1010px;font-size:22px;line-height:1.33;color:#6B6571;font-weight:430}
+.cover-bottom-rule{position:absolute;top:552px;left:86px;right:86px;height:1.5px;background:#8969AB}
+.cover-author{position:absolute;top:580px;left:87px;display:flex;flex-direction:column;gap:8px;color:#6B6571}
+.cover-author strong{font-size:30px;line-height:1.05;color:#4B2875;font-weight:700}
+.cover-author .degree{font-size:18px}
+.cover-people{position:absolute;top:583px;right:87px;text-align:right;display:flex;flex-direction:column;gap:6px;color:#6B6571;font-size:17px}
+.cover-date{position:absolute;bottom:22px;left:88px;font-size:15px;color:#80758B;letter-spacing:.4px}
+.cover-number{position:absolute;bottom:22px;right:88px;font-size:15px;color:#67418A}
+/* Player controls */
+.note-label{font-size:14px;letter-spacing:1.5px;color:#D2BEE6;text-transform:uppercase}
+#controls{position:fixed;bottom:15px;right:20px;display:flex;gap:7px;z-index:40;opacity:0;transition:opacity .2s ease}#controls:hover{opacity:1}
+#controls button,#notes button{background:#4B2875;color:#FFFFFF;border:0;border-radius:8px;font:600 15px Arial,sans-serif;cursor:pointer;padding:10px 13px}
+#hint{opacity:0;pointer-events:none;position:fixed;left:16px;bottom:12px;font:13px Arial,sans-serif;color:#6B6571;background:#F5F0FA;border-radius:8px;padding:8px 11px;z-index:40}
+#notes{position:fixed;display:none;z-index:80;right:0;top:0;bottom:0;width:420px;background:#302A38;color:#FFFFFF;padding:28px;overflow-y:auto;box-shadow:-10px 0 30px rgba(0,0,0,.18)}
+#notes.show{display:block}#notes h2{margin:15px 0;font-size:22px}#notes p{font-size:17px;line-height:1.6;white-space:pre-wrap;color:#F5F0FA}#notes .timer{font-weight:740;font-size:22px;color:#D5BEEA}
+#help{position:fixed;inset:0;background:#302A38D9;z-index:100;display:none;align-items:center;justify-content:center}#help.show{display:flex}
+#help .helpbox{background:#FFFFFF;width:540px;border-radius:15px;padding:35px;font-size:22px;line-height:1.6}
+#help strong{color:#4B2875}
+.slide .notes{display:none!important}
+@media print{
+ @page{size:13.333333in 7.5in;margin:0}
+ html,body{background:#FFFFFF!important;overflow:visible!important;width:1280px;height:auto}
+ #viewport{display:block!important;width:1280px!important;height:auto!important;overflow:visible!important;background:#FFFFFF!important}
+ .slide{position:relative!important;left:0!important;top:0!important;display:block!important;transform:none!important;box-shadow:none!important;break-after:page;page-break-after:always;page-break-inside:avoid;width:1280px!important;height:720px!important}
+ .art svg [data-phase]{opacity:1!important}
+ #controls,#hint,#notes,#help{display:none!important}
+}
+
+
+/* 2026-11-01 · Auditoría científica: fundamento breve por lámina */
+.bottom-takeaway{top:574px;min-height:68px;height:68px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:5px;padding:3px 0 3px 18px;line-height:1.16}
+.takeaway-label{display:block;font-size:14.8px;font-weight:780;line-height:1.1;letter-spacing:1.4px;color:#67418A}
+.takeaway-content{display:block;font-size:20.2px;font-weight:590;color:#302A38;line-height:1.2;max-width:1080px}
+.slide[data-id="07"] .bottom-takeaway .takeaway-content{font-size:19.2px}
+.slide[data-id="05"] .bottom-takeaway .takeaway-content{font-size:19.3px}
+.slide[data-id="09"] .bottom-takeaway .takeaway-content{font-size:19.5px}
+
+/* 2026-11-01 · Reestructuración metodológica: misma identidad editorial */
+.slide[data-id="10"] .art,.slide[data-id="11"] .art,.slide[data-id="12"] .art,.slide[data-id="13"] .art{top:217px;height:348px}
+.slide[data-id="10"] h1,.slide[data-id="11"] h1,.slide[data-id="12"] h1,.slide[data-id="13"] h1{font-size:41px;line-height:1.15}
+.slide[data-id="10"] .bottom-takeaway .takeaway-content,.slide[data-id="11"] .bottom-takeaway .takeaway-content,.slide[data-id="12"] .bottom-takeaway .takeaway-content,.slide[data-id="13"] .bottom-takeaway .takeaway-content{font-size:19.4px}
+.slide[data-id="11"] h1,.slide[data-id="12"] h1,.slide[data-id="13"] h1{max-width:1110px}
+
+}
+
+/* Corrección visual del método: títulos de una línea + espacios consistentes */
+.slide[data-id="10"] h1,.slide[data-id="11"] h1,.slide[data-id="12"] h1,.slide[data-id="13"] h1{font-size:40px;white-space:nowrap}
+.slide[data-id="10"] .art,.slide[data-id="11"] .art,.slide[data-id="12"] .art,.slide[data-id="13"] .art{top:214px;height:348px}
+.slide[data-id="10"] .bottom-takeaway,.slide[data-id="11"] .bottom-takeaway,.slide[data-id="12"] .bottom-takeaway,.slide[data-id="13"] .bottom-takeaway{top:572px}
+
+/* Integración definitiva: 14 láminas, ninguna de respaldo */
+.slide[data-id="12"] .art,.slide[data-id="13"] .art,.slide[data-id="14"] .art{top:214px;height:348px}
+.slide[data-id="10"] h1,.slide[data-id="11"] h1,.slide[data-id="12"] h1,.slide[data-id="13"] h1,.slide[data-id="14"] h1{font-size:40px;line-height:1.15;white-space:nowrap;max-width:1120px}
+.slide[data-id="10"] .art,.slide[data-id="11"] .art,.slide[data-id="12"] .art,.slide[data-id="13"] .art,.slide[data-id="14"] .art{top:214px;height:348px}
+.slide[data-id="10"] .bottom-takeaway,.slide[data-id="11"] .bottom-takeaway,.slide[data-id="12"] .bottom-takeaway,.slide[data-id="13"] .bottom-takeaway,.slide[data-id="14"] .bottom-takeaway{top:572px}
+.slide[data-id="10"] .bottom-takeaway .takeaway-content,.slide[data-id="11"] .bottom-takeaway .takeaway-content,.slide[data-id="12"] .bottom-takeaway .takeaway-content,.slide[data-id="13"] .bottom-takeaway .takeaway-content,.slide[data-id="14"] .bottom-takeaway .takeaway-content{font-size:18.8px}
+.slide[data-id="12"] h1{font-size:39px}
+
+
+/* Implementación de la auditoría introductoria · noviembre 2026 */
+.slide[data-id="02"] h1{font-size:39px;letter-spacing:-.58px;line-height:1.16;white-space:normal}
+.slide[data-id="02"] .art{top:211px;height:353px}
+.slide[data-id="02"] .bottom-takeaway{top:572px;min-height:60px;height:60px}
+.slide[data-id="02"] .bottom-takeaway .takeaway-content{font-size:18.8px}
+.slide[data-id="03"] h1{font-size:41px;letter-spacing:-.55px;line-height:1.14}
+.slide[data-id="03"] .art{top:211px;height:349px}
+.slide[data-id="03"] .bottom-takeaway{top:575px;min-height:59px;height:59px}
+.slide[data-id="03"] .bottom-takeaway .takeaway-content{font-size:19px}
+.slide[data-id="04"] .bottom-takeaway .takeaway-content{font-size:19px}
+.slide[data-id="05"] h1{font-size:40px}
+.slide[data-id="06"] h1{font-size:40px}
+.slide[data-id="07"] h1{font-size:42px}
+.slide[data-id="09"] h1{font-size:40px}
+.slide[data-id="09"] .art{top:218px;height:345px}
+.slide[data-id="09"] .sources{font-size:13.7px}
+
+/* Introducción depurada: una evidencia protagonista, recuadros redundantes eliminados */
+
+/* Versión optimizada del método, láminas 13–20 */
+.slide[data-id="13"] h1{font-size:39px!important;line-height:1.13!important;white-space:normal!important;letter-spacing:-.6px!important}
+.slide[data-id="13"] .art{top:213px!important;height:377px!important;left:86px!important;right:86px!important}
+.slide[data-id="13"] .sources{font-size:14px!important}
+.slide[data-id="14"] h1{font-size:39px!important;line-height:1.13!important;white-space:normal!important;letter-spacing:-.6px!important}
+.slide[data-id="14"] .art{top:213px!important;height:377px!important;left:86px!important;right:86px!important}
+.slide[data-id="14"] .sources{font-size:14px!important}
+.slide[data-id="15"] h1{font-size:39px!important;line-height:1.13!important;white-space:normal!important;letter-spacing:-.6px!important}
+.slide[data-id="15"] .art{top:213px!important;height:377px!important;left:86px!important;right:86px!important}
+.slide[data-id="15"] .sources{font-size:14px!important}
+.slide[data-id="16"] h1{font-size:39px!important;line-height:1.13!important;white-space:normal!important;letter-spacing:-.6px!important}
+.slide[data-id="16"] .art{top:213px!important;height:377px!important;left:86px!important;right:86px!important}
+.slide[data-id="16"] .sources{font-size:14px!important}
+.slide[data-id="17"] h1{font-size:39px!important;line-height:1.13!important;white-space:normal!important;letter-spacing:-.6px!important}
+.slide[data-id="17"] .art{top:213px!important;height:377px!important;left:86px!important;right:86px!important}
+.slide[data-id="17"] .sources{font-size:14px!important}
+.slide[data-id="18"] h1{font-size:39px!important;line-height:1.13!important;white-space:normal!important;letter-spacing:-.6px!important}
+.slide[data-id="18"] .art{top:213px!important;height:377px!important;left:86px!important;right:86px!important}
+.slide[data-id="18"] .sources{font-size:14px!important}
+.slide[data-id="19"] h1{font-size:39px!important;line-height:1.13!important;white-space:normal!important;letter-spacing:-.6px!important}
+.slide[data-id="19"] .art{top:213px!important;height:377px!important;left:86px!important;right:86px!important}
+.slide[data-id="19"] .sources{font-size:14px!important}
+.slide[data-id="20"] h1{font-size:39px!important;line-height:1.13!important;white-space:normal!important;letter-spacing:-.6px!important}
+.slide[data-id="20"] .art{top:213px!important;height:377px!important;left:86px!important;right:86px!important}
+.slide[data-id="20"] .sources{font-size:14px!important}
+.slide[data-id="15"] h1,.slide[data-id="16"] h1,.slide[data-id="17"] h1,.slide[data-id="18"] h1{font-size:38px!important}
+
+/* Cierre académico regional — sección 21 exclusivamente */
+.reveal .slides section#slide_21 h2 {font-size:37px;line-height:1.14;max-width:1100px;}
+.reveal .slides section#slide_21 .qmd-visual {height:345px;margin-top:3px;}
+
+/* Portada FACSO: imagen institucional oficial en lugar del bloque tipográfico. */
+.cover-facso-logo{position:absolute;top:78px;right:88px;width:235px;height:auto;display:block;object-fit:contain;background:transparent;border:0;margin:0}

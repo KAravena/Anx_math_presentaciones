@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1090" height="405" viewBox="0 0 1090 405" role="img" aria-label="Tres objetivos específicos: estimar la asociación promedio intraescuela, examinar la variación entre escuelas y evaluar su relación con la composición socioeconómica escolar.">
+<rect width="1090" height="405" fill="#FFFFFF"/>
+<line x1="28" y1="132" x2="1062" y2="132" stroke="#E6DBEF" stroke-width="1.7"/>
+<line x1="28" y1="265" x2="1062" y2="265" stroke="#E6DBEF" stroke-width="1.7"/>
+<rect x="30" y="17" width="101" height="99" rx="16" fill="#F5F0FA"/>
+<rect x="30" y="150" width="101" height="99" rx="16" fill="#F5F0FA"/>
+<rect x="30" y="283" width="101" height="99" rx="16" fill="#F5F0FA"/>
+<g font-family="Arial,Helvetica,sans-serif" text-anchor="middle" font-size="37" font-weight="760" fill="#4B2875">
+<text x="80" y="80">01</text><text x="80" y="213">02</text><text x="80" y="346">03</text>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="720" fill="#4B2875">
+<text x="166" y="52">Asociación promedio</text>
+<text x="166" y="184">Variación entre escuelas</text>
+<text x="166" y="316">Composición socioeconómica escolar</text>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" font-size="22.2" font-weight="510" fill="#302A38">
+<text x="166" y="88">Estimar y comparar la dirección y magnitud promedio de la asociación</text>
+<text x="166" y="118">ansiedad–rendimiento dentro de las escuelas y entre sistemas.</text>
+<text x="166" y="226">Examinar si la magnitud de esta asociación varía entre establecimientos.</text>
+<text x="166" y="358">Examinar si la asociación cambia según la composición escolar,</text>
+<text x="166" y="389">distinguiéndola del nivel socioeconómico individual.</text>
+</g>
+</svg>

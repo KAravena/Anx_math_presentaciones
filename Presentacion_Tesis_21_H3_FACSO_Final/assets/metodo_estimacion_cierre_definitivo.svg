@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 380" width="1100" height="380" role="img" aria-label="Cuatro decisiones de estimación: modelos multinivel ponderados por sistema; diez valores plausibles; interpretación con pendientes simples y contraste FDR de H3; metaanálisis de efectos aleatorios entre sistemas.">
+<rect x="0" y="0" width="1100" height="380" fill="#FFFFFF"/>
+<style>text{font-family:Arial,'Segoe UI',sans-serif} .num{font-size:29px;font-weight:740;fill:#4B2875} .head{font-size:25px;font-weight:730;fill:#4B2875} .detail{font-size:22px;font-weight:480;fill:#302A38} .meta{font-size:17px;fill:#71677B;font-weight:550}</style>
+<rect x="9" y="7" width="1080" height="82" rx="11" fill="#FFFFFF" stroke="#E6DBEF" stroke-width="1.4"/>
+<rect x="21" y="18" width="65" height="60" rx="10" fill="#F5F0FA"/>
+<text class="num" x="53.5" y="57" text-anchor="middle">01</text>
+<text class="head" x="110" y="38">Estimar por sistema</text>
+<text class="detail" x="110" y="66">Modelos multinivel con pesos de estudiantes y escuelas.</text>
+<text class="meta" x="1059" y="38" text-anchor="end">13 sistemas · WeMix</text>
+<rect x="9" y="98" width="1080" height="82" rx="11" fill="#FFFFFF" stroke="#E6DBEF" stroke-width="1.4"/>
+<rect x="21" y="109" width="65" height="60" rx="10" fill="#F5F0FA"/>
+<text class="num" x="53.5" y="148" text-anchor="middle">02</text>
+<text class="head" x="110" y="129">Incorporar la incertidumbre</text>
+<text class="detail" x="110" y="157">Diez valores plausibles: combinar estimaciones y su incertidumbre.</text>
+<text class="meta" x="1059" y="129" text-anchor="end">PV1–PV10</text>
+<rect x="9" y="189" width="1080" height="82" rx="11" fill="#FFFFFF" stroke="#E6DBEF" stroke-width="1.4"/>
+<rect x="21" y="200" width="65" height="60" rx="10" fill="#F5F0FA"/>
+<text class="num" x="53.5" y="239" text-anchor="middle">03</text>
+<text class="head" x="110" y="220">Interpretar y contrastar H3</text>
+<text class="detail" x="110" y="248">Pendientes según composición escolar y ajuste de 13 contrastes.</text>
+<text class="meta" x="1059" y="220" text-anchor="end">P10/P50/P90 · FDR</text>
+<rect x="9" y="280" width="1080" height="82" rx="11" fill="#FFFFFF" stroke="#E6DBEF" stroke-width="1.4"/>
+<rect x="21" y="291" width="65" height="60" rx="10" fill="#F5F0FA"/>
+<text class="num" x="53.5" y="330" text-anchor="middle">04</text>
+<text class="head" x="110" y="311">Sintetizar y comparar</text>
+<text class="detail" x="110" y="339">Metaanálisis de coeficientes comparables y sus diferencias.</text>
+<text class="meta" x="1059" y="311" text-anchor="end">Efectos aleatorios · REML</text>
+</svg>
